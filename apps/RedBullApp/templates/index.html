@@ -1,14 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="English">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    {% load static %}
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/specific.css' %}">
+    
+    <link rel="stylesheet" href="../static/css/default.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/nav.css">
+    <link rel="stylesheet" href="../static/css/specific.css">
+
 </head>
+
 <body>
-    <h1>WELCOME</h1>
+    <nav>
+        <div class='blanket'></div>
+        <div class='container'>
+            <div><img position=1 class='currentNav' src="../static/vectors/Mandala.svg" alt="Plus"><svg class='shrink' position=1>
+                      <circle/>
+                        </svg>
+
+            </div>
+            <div><img position=2 class='dormantNav' src="../static/vectors/Mandala.svg" alt="Plus">
+                <svg position=2>
+                      <circle/>
+                        </svg>
+                <div class='side-text'>WHAT WHERE WHEN</div>
+            </div>
+            <div><img position=3 class='dormantNav' src="../static/vectors/Mandala.svg" alt="Plus">
+                <svg position=3>
+                      <circle/>
+                        </svg>
+                <div class='side-text'>COLLABORATORS</div>
+            </div>
+            <div><img position=4 class='dormantNav' src="../static/vectors/Mandala.svg" alt="Plus">
+                <svg position=4>
+                      <circle/>
+                        </svg>
+                <div class='side-text'>PERFORMERS</div>
+            </div>
+            <div><img position=5 class='dormantNav' src="../static/vectors/Mandala.svg" alt="Plus">
+                <svg position=5>
+                      <circle/>
+                        </svg>
+                <div class='side-text'>RSVP</div>
+            </div>
+
+        </div>
+    </nav>
+    <div class='background'><img src="../static/img/Background.png" alt=""></div>
+    <div class='main'>
+        <div class='container' id='left'>
+
+            <div position=5 class='module containerFloat'>
+                
+                <img class='svg' src="../static/vectors/RSVP/RSVPletter.svg" alt="">
+                <img class='svg' src="../static/vectors/RSVP/RSVPphone.svg" alt="">
+                <img class='svg' src="../static/vectors/RSVP/RSVPspeechbubble.svg" alt="">
+
+                <img class='svg' src="../static/vectors/RSVP/RSVPletter.svg" alt="">
+                <img class='svg' src="../static/vectors/RSVP/RSVPphone.svg" alt="">
+                <img class='svg' src="../static/vectors/RSVP/RSVPspeechbubble.svg" alt="">
+
+                <img class='svg' src="../static/vectors/RSVP/RSVPletter.svg" alt="">
+                <img class='svg' src="../static/vectors/RSVP/RSVPphone.svg" alt="">
+                <img class='svg' src="../static/vectors/RSVP/RSVPspeechbubble.svg" alt="">
+
+                <img class='titleImg lax' src="../static/vectors/RSVP.svg" alt="">
+
+            </div>
+
+            <div position=4 class='module fourth containerFloat'>
+
+
+                <img class='svg' src="../static/vectors/Performers/PerformerLightning.svg" alt="">
+                <img class='svg' src="../static/vectors/Performers/PerformersBoom.svg" alt="">
+                <img class='svg' src="../static/vectors/Performers/PerformersMic.svg" alt="">
+                <img class='svg' src="../static/vectors/Performers/PerformersTURNTABLE.svg" alt="">
+
+                <img class='svg' src="../static/vectors/Performers/PerformerLightning.svg" alt="">
+                <img class='svg' src="../static/vectors/Performers/PerformersBoom.svg" alt="">
+                <img class='svg' src="../static/vectors/Performers/PerformersMic.svg" alt="">
+                <img class='svg' src="../static/vectors/Performers/PerformersTURNTABLE.svg" alt="">
+
+                <img class='titleImg lax' src="../static/vectors/PERFORMERS.svg" alt="performers">
+            </div>
+
+            <div position=3 class='module third containerFloat'>
+
+
+
+                <img class='svg' src="../static/vectors/Collaborators/CollabBarber.svg" alt="">
+                <img class='svg' src="../static/vectors/Collaborators/Collabcocktail.svg" alt="">
+                <img class='svg' src="../static/vectors/Collaborators/CollabFork.svg" alt="">
+                <img class='svg' src="../static/vectors/Collaborators/CollabNailPolish.svg" alt="">
+
+                <img class='svg' src="../static/vectors/Collaborators/CollabBarber.svg" alt="">
+                <img class='svg' src="../static/vectors/Collaborators/Collabcocktail.svg" alt="">
+                <img class='svg' src="../static/vectors/Collaborators/CollabFork.svg" alt="">
+                <img class='svg' src="../static/vectors/Collaborators/CollabNailPolish.svg" alt="">
+
+
+                <img class='titleImg lax' src="../static/vectors/COLLABORATORS.svg" alt=""></div>
+
+            <div position=2 class='module second containerFloat'>
+
+
+                <img class='svg' src="../static/vectors/WhatWhereWhen/WWWclock.svg" alt="">
+                <img class='svg' src="../static/vectors/WhatWhereWhen/WWWdoublearrow.svg" alt="">
+                <img class='svg' src="../static/vectors/WhatWhereWhen/WWWquestionmark.svg" alt="">
+
+                <img class='svg' src="../static/vectors/WhatWhereWhen/WWWclock.svg" alt="">
+                <img class='svg' src="../static/vectors/WhatWhereWhen/WWWdoublearrow.svg" alt="">
+                <img class='svg' src="../static/vectors/WhatWhereWhen/WWWquestionmark.svg" alt="">
+
+                <img class='titleImg lax' src="../static/vectors/WHATWHEREWHEN.svg" alt="What Where When">
+            </div>
+            <div position=1 class='view module first'>
+                <img src="../static/vectors/Mandala.svg" alt="">
+                <h1>VILLA</h1>
+            </div>
+
+
+        </div>
+        <div class='container' id='right'>
+
+            <div position=1 class='view module edge-top first'>
+                <img src="../static/vectors/Mandala.svg" alt="">
+                <h1>RIAD</h1>
+            </div>
+
+            <div position=2 class='module second'>
+                <div class='lax'>
+                    <h2>Villa Riad</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae rem, odio eos.</p>
+                </div>
+                <div class='lax'>
+                    <h2>Undisclosed Location</h2>
+                    <p>consequuntur reprehenderit blanditiis mollitia adipisci esse laborum.</p>
+                </div>
+                <div class='lax'>
+                    <h2>SUN AUG 05 2018</h2>
+                    <p>Lorem purp skirt.</p>
+                </div>
+            </div>
+
+            <div position=3 class='module third'>
+                <ul>
+                    <li class='lax'><svg><circle/></svg>
+                        <h2>Brian Fisher</h2>
+                        <p>text</p>
+                    </li>
+                    <li class='right lax'><svg><circle/></svg>
+                        <h2>Grey Ghost Detroit</h2>
+                        <p>text</p>
+                    </li>
+                    <li class='lax'><svg><circle/></svg>
+                        <h2>The Blind Barber</h2>
+                        <p>text</p>
+                    </li>
+                    <li class='right lax'><svg><circle/></svg>
+                        <h2>Astro Wifey</h2>
+                        <p>text</p>
+                    </li>
+                    <li class='lax'><svg><circle/></svg>
+                        <h2>Jason Markk</h2>
+                        <p>text</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div position=4 class='module fourth'>
+                <div class='lax'>
+                    <h2>PERFORMERS <br><span> TO BE </span> <br> ANNOUNCED</h2>
+                </div>
+            </div>
+
+            <div position=5 class='module edge-bottom fifth'>
+                <form action="/">
+                    <div class='lax'>
+                        <p>First Name</p><input type="text"></div>
+                    <div class='lax'>
+                        <p>Last Name</p><input type="text"></div>
+                    <div class='lax'>
+                        <p>Email</p><input type="text"></div>
+                    <div class='lax'>
+                        <p>Cell Phone</p><input type="text"></div>
+                    <div class='lax'>
+                        <p>Do you have a wristband?</p>
+                        <div class='checkboxes'>
+
+
+                            <span>Yes</span>
+                            <div name='yes' class='fakebox'>
+                                <div class='check hide'></div>
+                            </div>
+                            <input name='yes' type="checkbox">
+                            <span>No</span>
+                            <div name='no' class='fakebox'>
+                                <div class="check hide"></div>
+                            </div>
+                            <input name='no' type="checkbox">
+
+                        </div>
+
+                    </div>
+                    <div class='lax'>
+                        <p id='invitation-text'>Invitation number</p><input type="text" id='invitation'></div>
+                    <div class='submit lax'><button type=b utton name='button'>SUBMIT</button></div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class='arrow'>
+            <p id='arrow-ting'>Scroll Down</p>
+        </div>
+        <script src="../static/js/nav.js"></script>
+        <script src="../static/js/script.js"></script>
+        <script src="../static/js/checkboxes.js"></script>
+        <script src="../static/js/float.js"></script>
+        <script src='../static/js/scale.js'></script>
 </body>
+
 </html>

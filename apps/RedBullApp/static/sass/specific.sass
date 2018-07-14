@@ -1,0 +1,224 @@
+@import 'styles'
+
+.first
+    padding-top: 30%
+    img
+        height: 20px
+        width: auto
+        display: block
+        position: relative
+
+    h1
+        color: $letterOrange
+        font-family: $hUltraLight
+        font-size: 120px
+        margin-right: $landingMargin
+        margin-left: $landingMargin
+        letter-spacing: 15px
+#right
+    .first
+        h1
+            text-align: left
+            
+        img
+            margin-right: auto
+            margin-left: $landingMargin / 2
+            
+    .second
+        display: grid
+        grid-template-rows: 1fr 1fr 1fr
+        div
+            height: auto
+            position: relative
+            width: $sectionWidth
+            display: block
+            margin-right: auto
+            margin-left: auto
+            padding-top: 10%
+            box-sizing: border-box
+            
+            
+            h2
+                color: $red
+                text-align: left
+            p
+                text-align: left
+                position: relative
+                top: 0
+                
+    .third
+        min-height: 570px
+        ul
+            padding-top: 160px
+            box-sizing: border-box
+            height: 100% 
+            width: $sectionWidth
+            @include center
+            display: grid
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 
+            
+            li
+                margin-top: -80px
+                position: relative
+                width: 50%
+                display: block
+            
+                svg
+                    position: absolute
+                    height: 0
+                    width: 0
+                    z-index: 30
+                    left: 0
+                    circle
+                        r: 20px
+                        cy: 20px
+                        cx: 20px
+                        fill: $whiteDots
+                h2
+                    color: $yellow
+                    font-size: $titleSize * .8
+                    
+                
+                p
+                    text-align: left
+                    position: relative
+                    left: 10px
+                    top: 0px
+                    
+                    
+            .right
+                margin-left: auto
+                
+    .fourth
+        h2
+            color: $orange
+            display: inline-block
+            text-align: center
+            @include center
+            top: 40%
+            
+            span
+                font-family: $hThin
+                
+            
+    .fifth
+        form
+            width: $sectionWidth
+            height: 60%
+            top: 20%
+            @include center
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr 1fr 1fr
+            
+            div
+                position: relative
+                box-sizing: border-box
+                width: 80%
+                @include center
+                    
+                input
+                    background-color: $navColor
+                    border: $turquoise 1px solid
+                    padding-left: 5px
+                    height: $bodySize * 1.5
+                    position: relative
+                    top: $bodySize
+                    width: 100%
+                    color: $whiteDots
+                    
+                p
+                    text-align: left
+                    padding-left: 5px
+                    color: $turquoise
+                    margin-bottom: 10px
+                    
+                .disabled
+                    color: $dots
+                    border-color: $dots
+                
+            .checkboxes
+                margin-left: 0
+                display: flex
+                justify-content: space-between
+                height: 100%
+                float: left
+                width: 60%
+                
+                .fakebox
+                    width: $bodySize * 1.2
+                    height: $bodySize * 1.2
+                    position: relative
+                    top: $bodySize + 5px
+                    display: inline-block
+                    background-color: $navColor
+                    border: solid 1px $turquoise
+                    padding-left: 5px
+                    cursor: pointer
+                    
+                    .check
+                        width: $bodySize / 2
+                        height: $bodySize / 2
+                        border-radius: $bodySize / 2
+                        background-color: $whiteDots
+                        display: block
+                        position: absolute
+                        top: 0
+                        left: 0
+                        right: 0
+                        bottom: 0
+                        margin: auto
+                        transition: all .1s linear 0s
+                        
+                    .hide
+                        width: 0px
+                        height: 0px
+                    
+                input
+                    display: none
+                    background-color: $navColor
+                    cursor: pointer
+
+                span
+                    padding-left: 5px
+                    color: $turquoise
+                    font-size: $bodySize
+                    font-family: $hLight
+                    position: relative
+                    top: $bodySize + 5px
+                    height: $bodySize
+                    box-sizing: border-box
+                    
+        .submit
+            grid-column: 1 /span 2
+            
+            button
+                background-color: $turquoise
+                color: $navColor
+                font-family: $hLight
+                border: none
+                font-size: $bodySize * 1.5
+                @include center
+                width: 50%
+                top: $bodySize
+                cursor: pointer
+                    
+        
+            
+
+                
+#left
+    .first
+        h1
+            text-align: right
+    img
+        margin-left: auto
+        margin-right: $landingMargin / 2
+        
+    .third
+        overflow: hidden
+        .background
+            height: auto
+            width: 100%
+        
+    
