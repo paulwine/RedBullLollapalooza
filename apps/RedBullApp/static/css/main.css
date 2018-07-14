@@ -1,3 +1,115 @@
-h1 {
-    color: blue;
-}
+body {
+  display: flex;
+  box-sizing: border-box;
+  min-width: 800px;
+  min-height: 450px; }
+  body .background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    overflow: hidden; }
+    body .background img {
+      position: relative;
+      transform: translateY(0%);
+      top: -5%;
+      transition: 0.8s all ease-in-out 0s; }
+
+p {
+  font-size: 16px;
+  font-family: "HelveticaLight"; }
+
+h2 {
+  font-family: "HelveticaBold";
+  font-size: 50px; }
+
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white; }
+  .main .container {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden; }
+    .main .container div {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: block;
+      box-sizing: border;
+      top: 0; }
+      .main .container div p {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 20%; }
+    .main .container .invisible {
+      visibility: hidden; }
+
+.arrow {
+  position: absolute;
+  display: block;
+  z-index: 20;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 30px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto; }
+
+.module {
+  transition: 0.8s all ease-in-out 0s; }
+
+#left .containerFloat {
+  overflow: hidden; }
+  #left .containerFloat:nth-of-type(1) {
+    background-color: #45bfa2; }
+  #left .containerFloat:nth-of-type(2) {
+    background-color: #c16332; }
+  #left .containerFloat:nth-of-type(3) {
+    background-color: #dbb64e; }
+  #left .containerFloat:nth-of-type(4) {
+    background-color: #c24c46; }
+  #left .containerFloat img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: block; }
+  #left .containerFloat .titleImg {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: 0.8s all ease-in-out 0.1s; }
+  #left .containerFloat .movingDown {
+    transform: translateY(-150px);
+    transition: 0s all linear 0s; }
+  #left .containerFloat .movingUp {
+    transform: translateY(150px);
+    transition: 0s all linear 0s; }
+
+#right .lax {
+  transform: translateY(0);
+  transition: 1s all ease-in-out 0s; }
+#right .movingDown {
+  transform: translateY(-150px);
+  transition: 0s all linear 0s; }
+#right .movingUp {
+  transform: translateY(150px);
+  transition: 0s all linear 0s; }
+
+/*# sourceMappingURL=main.css.map */

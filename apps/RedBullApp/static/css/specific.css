@@ -1,0 +1,199 @@
+.first {
+  padding-top: 30%; }
+  .first img {
+    height: 20px;
+    width: auto;
+    display: block;
+    position: relative; }
+  .first h1 {
+    color: #e29e33;
+    font-family: "HelveticaUltraLight";
+    font-size: 120px;
+    margin-right: 20px;
+    margin-left: 20px;
+    letter-spacing: 15px; }
+
+#right .first h1 {
+  text-align: left; }
+#right .first img {
+  margin-right: auto;
+  margin-left: 10px; }
+#right .second {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr; }
+  #right .second div {
+    height: auto;
+    position: relative;
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10%;
+    box-sizing: border-box; }
+    #right .second div h2 {
+      color: #c24c46;
+      text-align: left; }
+    #right .second div p {
+      text-align: left;
+      position: relative;
+      top: 0; }
+#right .third {
+  min-height: 570px; }
+  #right .third ul {
+    padding-top: 160px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 90%;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
+    #right .third ul li {
+      margin-top: -80px;
+      position: relative;
+      width: 50%;
+      display: block; }
+      #right .third ul li svg {
+        position: absolute;
+        height: 0;
+        width: 0;
+        z-index: 30;
+        left: 0; }
+        #right .third ul li svg circle {
+          r: 20px;
+          cy: 20px;
+          cx: 20px;
+          fill: #dbd7d8; }
+      #right .third ul li h2 {
+        color: #dbb64e;
+        font-size: 40px; }
+      #right .third ul li p {
+        text-align: left;
+        position: relative;
+        left: 10px;
+        top: 0px; }
+    #right .third ul .right {
+      margin-left: auto; }
+#right .fourth h2 {
+  color: #c16332;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  top: 40%; }
+  #right .fourth h2 span {
+    font-family: "HelveticaThin"; }
+#right .fifth form {
+  width: 90%;
+  height: 60%;
+  top: 20%;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; }
+  #right .fifth form div {
+    position: relative;
+    box-sizing: border-box;
+    width: 80%;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
+    #right .fifth form div input {
+      background-color: #151516;
+      border: #45bfa2 1px solid;
+      padding-left: 5px;
+      height: 24px;
+      position: relative;
+      top: 16px;
+      width: 100%;
+      color: #dbd7d8; }
+    #right .fifth form div p {
+      text-align: left;
+      padding-left: 5px;
+      color: #45bfa2;
+      margin-bottom: 10px; }
+    #right .fifth form div .disabled {
+      color: #3f3e3f;
+      border-color: #3f3e3f; }
+  #right .fifth form .checkboxes {
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    float: left;
+    width: 60%; }
+    #right .fifth form .checkboxes .fakebox {
+      width: 19.2px;
+      height: 19.2px;
+      position: relative;
+      top: 21px;
+      display: inline-block;
+      background-color: #151516;
+      border: solid 1px #45bfa2;
+      padding-left: 5px;
+      cursor: pointer; }
+      #right .fifth form .checkboxes .fakebox .check {
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background-color: #dbd7d8;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transition: all 0.1s linear 0s; }
+      #right .fifth form .checkboxes .fakebox .hide {
+        width: 0px;
+        height: 0px; }
+    #right .fifth form .checkboxes input {
+      display: none;
+      background-color: #151516;
+      cursor: pointer; }
+    #right .fifth form .checkboxes span {
+      padding-left: 5px;
+      color: #45bfa2;
+      font-size: 16px;
+      font-family: "HelveticaLight";
+      position: relative;
+      top: 21px;
+      height: 16px;
+      box-sizing: border-box; }
+#right .fifth .submit {
+  grid-column: 1/span 2; }
+  #right .fifth .submit button {
+    background-color: #45bfa2;
+    color: #151516;
+    font-family: "HelveticaLight";
+    border: none;
+    font-size: 24px;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    top: 16px;
+    cursor: pointer; }
+
+#left .first h1 {
+  text-align: right; }
+#left img {
+  margin-left: auto;
+  margin-right: 10px; }
+#left .third {
+  overflow: hidden; }
+  #left .third .background {
+    height: auto;
+    width: 100%; }
+
+/*# sourceMappingURL=specific.css.map */
