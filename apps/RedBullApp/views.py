@@ -20,11 +20,14 @@ def form_input(request):
     if 'invitation' in request.POST:
         invitation = request.POST['invitation']
     wristband = False
+    message_html = render_to_string('waitlist_email.html')
     if 'yes' in request.POST:
         wristband = True
+        message_html = render_to_string('email.html')
     print(wristband)
     User.objects.create(first_name=first_name, last_name=last_name, email=email, wristband=wristband, invitation=invitation)
-    message_html = render_to_string('email.html')
+    
+    
     send_mail(
     'Thank you for partying with us',
     'RedBull',
