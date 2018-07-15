@@ -3,6 +3,10 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render, redirect
 from .models import User
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+
 
 # Create your views here.
 def index(request):
@@ -20,6 +24,15 @@ def form_input(request):
         wristband = True
     print(wristband)
     User.objects.create(first_name=first_name, last_name=last_name, email=email, wristband=wristband, invitation=invitation)
+    message_html = render_to_string('email.html')
+    send_mail(
+    'Thank you for partying with us',
+    'RedBull',
+    'RedBullVillaRiad@gmail.com',
+    [email],
+    fail_silently=False,
+    html_message = message_html,
+)
     return redirect("/display_users")
 
 def display_users(request):
