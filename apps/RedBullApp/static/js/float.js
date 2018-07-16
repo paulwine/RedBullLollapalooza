@@ -97,8 +97,6 @@ function moveObjects(array, container) {
                 //spawn right
                 hold.x = currentContainer.offsetWidth + 10 + hold.width;
                 hold.y = Math.random() * currentContainer.offsetHeight;
-                console.log(hold.x + "x");
-                console.log(hold.y + "y");
                 
             }else {
                 

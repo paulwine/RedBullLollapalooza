@@ -1,0 +1,320 @@
+@media (min-width: 701px) {
+  #mobile {
+    display: none; } }
+@media (max-width: 700px) {
+  #mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute; } }
+
+.mobile-section {
+  position: static;
+  min-height: 100%;
+  min-width: 100%;
+  padding-bottom: 20%;
+  box-sizing: border-box;
+  background-image: url("../img/Background.png"); }
+  .mobile-section img {
+    height: auto;
+    width: auto;
+    max-width: 80px;
+    max-height: 80px; }
+
+.landing {
+  height: 100%;
+  width: 100%; }
+  .landing div {
+    height: 30%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%; }
+    .landing div img {
+      max-height: 50px;
+      max-width: 48%;
+      display: block;
+      position: relative;
+      margin-top: auto;
+      margin-bottom: auto; }
+  .landing h1 {
+    font-size: 3.5rem;
+    font-family: "HelveticaThin";
+    color: #e29e33;
+    width: 100%;
+    text-align: center; }
+
+.mobile-header {
+  height: 200px;
+  width: 100%;
+  position: static;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden; }
+  .mobile-header img {
+    position: absolute; }
+  .mobile-header h2 {
+    color: #dbd7d8;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: block;
+    top: 35%; }
+
+.www .mobile-header {
+  background-color: #c24c46; }
+.www img:nth-of-type(1) {
+  top: 60%;
+  left: 4%; }
+.www img:nth-of-type(2) {
+  top: 25%;
+  left: 47%; }
+.www img:nth-of-type(3) {
+  top: 27%;
+  left: 84%; }
+.www h3 {
+  color: #c24c46;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 3rem;
+  font-family: "HelveticaThin";
+  text-align: center; }
+.www p {
+  margin-top: 10px;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  width: 90%;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+.collab .mobile-header {
+  background-color: #dbb64e; }
+  .collab .mobile-header img:nth-of-type(1) {
+    top: 10%;
+    left: -5%; }
+  .collab .mobile-header img:nth-of-type(2) {
+    top: 70%;
+    left: 16%; }
+  .collab .mobile-header img:nth-of-type(3) {
+    top: 70%;
+    left: 47%;
+    transform: rotate(300deg); }
+  .collab .mobile-header img:nth-of-type(4) {
+    top: 20%;
+    left: 65%; }
+  .collab .mobile-header img:nth-of-type(5) {
+    top: 80%;
+    left: 80%; }
+.collab ul {
+  width: 100%; }
+  .collab ul li {
+    height: 100px;
+    width: 100%; }
+    .collab ul li h3 {
+      color: #dbb64e;
+      font-size: 2rem;
+      font-family: "HelveticaThin";
+      width: 100%;
+      text-align: center;
+      margin-top: 40px; }
+    .collab ul li p {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 16px; }
+
+.performers .mobile-header {
+  background-color: #c16332; }
+  .performers .mobile-header img:nth-of-type(1) {
+    top: 20%;
+    left: 10%;
+    transform: rotate(20deg); }
+  .performers .mobile-header img:nth-of-type(2) {
+    top: 70%;
+    left: 40%;
+    transform: rotate(300deg); }
+  .performers .mobile-header img:nth-of-type(3) {
+    top: 60%;
+    left: 70%;
+    transform: rotate(10deg); }
+  .performers .mobile-header img:nth-of-type(4) {
+    top: 10%;
+    left: 90%;
+    transform: rotate(300deg); }
+.performers h3 {
+  font-size: 2.5rem;
+  font-family: "HelveticaThin";
+  color: #c16332;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px; }
+.performers .flex-box {
+  width: 60%;
+  height: 200px;
+  margin-top: 80px;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .performers .flex-box .top {
+    width: 100%;
+    font-size: 21px;
+    text-align: center;
+    height: 50%;
+    box-sizing: border-box; }
+    .performers .flex-box .top p {
+      color: #6d6d6d;
+      position: relative;
+      top: 70%; }
+  .performers .flex-box .bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between; }
+    .performers .flex-box .bottom .tall {
+      max-width: 12%; }
+    .performers .flex-box .bottom .wide {
+      max-width: 20%; }
+
+.RSVP .mobile-header {
+  background-color: #45bfa2; }
+  .RSVP .mobile-header img:nth-of-type(1) {
+    top: 70%;
+    left: 10%;
+    transform: rotate(-10deg); }
+  .RSVP .mobile-header img:nth-of-type(2) {
+    top: 7%;
+    left: 30%;
+    transform: rotate(-15deg); }
+  .RSVP .mobile-header img:nth-of-type(3) {
+    top: 20%;
+    left: 80%;
+    transform: rotate(-35deg); }
+.RSVP form {
+  position: relative;
+  width: 90%;
+  margin-top: 100px;
+  height: 50%;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; }
+  .RSVP form div {
+    position: relative;
+    box-sizing: border-box;
+    width: 90%;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
+    .RSVP form div input {
+      background-color: #151516;
+      border: #45bfa2 1px solid;
+      padding-left: 5px;
+      height: 31.5px;
+      position: relative;
+      margin-top: 5px;
+      width: 100%;
+      color: #dbd7d8; }
+    .RSVP form div p {
+      text-align: left;
+      padding-left: 5px;
+      color: #45bfa2;
+      margin-top: 30px;
+      height: 21px;
+      font-size: 16px;
+      margin-bottom: 10px; }
+    .RSVP form div .disabled {
+      color: #3f3e3f;
+      border-color: #3f3e3f; }
+  .RSVP form .checkboxes {
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    float: left;
+    width: 100%; }
+    .RSVP form .checkboxes .fakebox {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 21px;
+      display: inline-block;
+      background-color: #151516;
+      border: solid 1px #45bfa2;
+      padding-left: 5px;
+      cursor: pointer;
+      overflow: hidden; }
+      .RSVP form .checkboxes .fakebox .check {
+        width: 42px;
+        height: 42px;
+        border-radius: 10.5px;
+        background-color: #dbd7d8;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transition: all 0.1s linear 0s; }
+      .RSVP form .checkboxes .fakebox .hide {
+        width: 0px;
+        height: 0px; }
+    .RSVP form .checkboxes input {
+      display: none;
+      background-color: #151516;
+      cursor: pointer; }
+    .RSVP form .checkboxes span {
+      padding-left: 5px;
+      color: #45bfa2;
+      font-size: 21px;
+      font-family: "HelveticaLight";
+      position: relative;
+      top: 21px;
+      height: 21px;
+      box-sizing: border-box; }
+.RSVP .submit {
+  position: relative;
+  top: 30px;
+  grid-column: 1/span 2; }
+  .RSVP .submit button {
+    background-color: #45bfa2;
+    color: #151516;
+    font-family: "HelveticaThin";
+    border: none;
+    font-size: 31.5px;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    top: 21px;
+    cursor: pointer; }
+.RSVP .subtext {
+  position: static;
+  margin-top: 90px;
+  width: 70%;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  line-height: 21px;
+  font-size: 21px; }
+  .RSVP .subtext p {
+    color: #6d6d6d; }
+
+/*# sourceMappingURL=mobile.css.map */

@@ -8,11 +8,14 @@
     z-index: 15
 
 nav
-    position: relative
+    position: absolute
+    left: 0
     height: 100%
     width: $navWidth
     box-sizing: border-box
     background-color: $navColor
+    @media #{$mediaSmall}
+        display: none
 
     .container
         height: 50%
@@ -69,7 +72,7 @@ nav
         height: 0px
         width: 0px
 svg
-    z-index: 20
+    z-index: 200
     cursor: pointer
     top: ($mandalaWidth / 2) - ($navDotRadius / 2) - 2
     height: $navDotRadius * 2
