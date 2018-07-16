@@ -3,7 +3,7 @@ let leftView = document.getElementById('left');
 let rightView = document.getElementById('right');
 
 let body = document.querySelector('body');
-let arrow = document.getElementById('arrow-ting');
+
 let pointers = document.querySelector('nav').querySelector('.container').getElementsByTagName('img');
 let circles = document.querySelector('nav').querySelectorAll('svg');
 
@@ -60,12 +60,12 @@ function tagRight(direction) {
     if (direction === 'up') {
         slideUp(now, false);
         slideUp(next, true);
-
         let delay = 0;
-        let laxers = next.getElementsByClassName('lax');
 
+        let laxers = next.getElementsByClassName('lax');
         for (let each of laxers) {
             setTimeout(function () {
+
                 parallaxImg(each, "up");
             }, delay);
             delay += 50;
@@ -79,6 +79,7 @@ function tagRight(direction) {
 
         for (let each of laxers) {
             setTimeout(function () {
+
                 parallaxImg(each, "down");
             }, delay);
             delay += 50;
@@ -95,7 +96,7 @@ function triggerCircle(circle) {
         }
     }
     clearCircle(circle);
-}
+};
 
 function triggerBackground(position) {
     let background = document.querySelector('.background').querySelector('img');
@@ -271,21 +272,22 @@ function pageUp() {
     }
 }
 
-function sideTextOn(circle){
-    let text = circle.nextElementSibling;    
-    if(!(text === null)){
-        
-    text.style.left = '59px';
+function sideTextOn(circle) {
+    let text = circle.nextElementSibling;
+    if (!(text === null)) {
+
+        text.style.left = '59px';
     }
 
 }
-function sideTextOff(circle){
-    let text = circle.nextElementSibling;    
-    
-    if(!(text === null)){
-        
-    let width = text.offsetWidth;
-    text.style.left = width * -1 + "px";
+
+function sideTextOff(circle) {
+    let text = circle.nextElementSibling;
+
+    if (!(text === null)) {
+
+        let width = text.offsetWidth;
+        text.style.left = width * -1 + "px";
     }
 }
 
@@ -294,15 +296,17 @@ function parallaxImg(item, direction) {
     if (!(item === null) && !(item === undefined)) {
         if (direction === "up") {
             item.classList.add("movingUp");
+
             setTimeout(function () {
                 item.classList.remove("movingUp");
-            }, 20);
+            }, 20); //DO NOT TOUCH THE 20
 
         } else {
             item.classList.add("movingDown");
+
             setTimeout(function () {
                 item.classList.remove("movingDown");
-            }, 20);
+            }, 20); //DO NOT TOUCH THE 20
         }
     }
 }
@@ -345,9 +349,7 @@ if (document.addEventListener) {
 }
 
 tagItems();
-arrow.onclick = function () {
-    pageDown();
-}
+
 
 
 for (let each of circles) {
@@ -362,11 +364,11 @@ function test() {
     slideUp(test, false);
 }
 
-for(let each of circles){
-    each.onmouseenter = function(){
+for (let each of circles) {
+    each.onmouseenter = function () {
         sideTextOn(each);
     }
-    each.onmouseleave = function(){
+    each.onmouseleave = function () {
         sideTextOff(each);
     }
 }

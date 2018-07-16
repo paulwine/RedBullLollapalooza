@@ -1,8 +1,8 @@
 let containers = document.getElementsByClassName('containerFloat');
 
 
-const boundry = 150; //controls speed of reset
-const speed = .5;
+const boundry = 100; //controls speed of reset
+const speed = 1.5;
 const thresh = .2;
 const gravity = 0;
 
@@ -16,6 +16,16 @@ function calculateDY() {
         temDY += thresh;
     }
     return temDY;
+}
+
+function calculateDX() {
+    let temDX = (Math.random() * (speed * 2)) - speed;
+    if (temDX < 0) {
+        temDX -= thresh;
+    } else {
+        temDX += thresh;
+    }
+    return temDX;
 }
 
 function calculateR() {
@@ -33,7 +43,7 @@ function Icon(svg, container) {
     this.svg = svg;
     this.x = (Math.random() * (container.offsetWidth * 2)) - container.offsetWidth - 100;
     this.y = Math.random() * (container.offsetHeight - 100);
-    this.dx = Math.random() * speed + thresh;
+    this.dx = calculateDX();
     this.dy = calculateDY();
     this.rotate = Math.random() * 360;
     this.dr = calculateR();
@@ -71,24 +81,34 @@ function moveObjects(array, container) {
         hold.width = hold.svg.offsetWidth;
         hold.svg.style.transform = `rotate(${hold.rotate}deg)`;
 
-        if (hold.x > currentContainer.offsetWidth + hold.width || hold.y < -boundry || hold.y > currentContainer.offsetHeight + hold.width) {
+        if (hold.x > currentContainer.offsetWidth + hold.width + 100 || hold.y < -boundry || hold.y > currentContainer.offsetHeight + hold.width || hold.x < -boundry) {
 
             //resets animation
             let number = Math.random() * 1;
-            if (number < .333) {
+
+            if (number < .25) {
                 hold.x = -100
                 hold.y = Math.random() * currentContainer.offsetHeight - hold.width;
-            } else if (number < .666) {
+            } else if (number < .5) {
                 hold.x = (Math.random() * currentContainer.offsetWidth - boundry);
-                hold.y = currentContainer.offsetHeight + 10;
-            } else {
+                hold.y = currentContainer.offsetHeight + 10; 
+            } else if(number < .75){
+                
+                //spawn right
+                hold.x = currentContainer.offsetWidth + 10 + hold.width;
+                hold.y = Math.random() * currentContainer.offsetHeight;
+                console.log(hold.x + "x");
+                console.log(hold.y + "y");
+                
+            }else {
+                
                 hold.x = Math.random() * currentContainer.offsetWidth - hold.width;
                 hold.y = (Math.random() * -boundry) - hold.width;
             }
 
             hold.svg.style.left = hold.x;
             hold.svg.style.top = hold.y;
-            hold.dx = Math.random() * speed + thresh;
+            hold.dx = calculateDX();
             hold.dy = calculateDY();
 
         }
