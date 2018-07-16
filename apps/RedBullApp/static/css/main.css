@@ -5,8 +5,11 @@ body {
   display: flex;
   box-sizing: border-box;
   min-width: 800px;
-  min-height: 600px;
   overflow: hidden; }
+  @media (max-width: 700px) {
+    body {
+      overflow: auto;
+      min-width: 0px; } }
   body .curtain {
     height: 100%;
     width: 50%;
@@ -38,6 +41,9 @@ body {
     display: block;
     z-index: 10;
     overflow: hidden; }
+    @media (max-width: 700px) {
+      body .background {
+        display: none; } }
     body .background img {
       position: relative;
       transform: translateY(0%);
@@ -52,12 +58,14 @@ h2 {
   font-family: "HelveticaThin"; }
 
 .main {
-  position: relative;
+  position: absolute;
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  color: white; }
+  justify-content: space-between; }
+  @media (max-width: 700px) {
+    .main {
+      display: none; } }
   .main .container {
     display: block;
     position: relative;
