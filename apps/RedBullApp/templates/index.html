@@ -5,17 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    {% load static %}
     <link rel="stylesheet" href="{% static 'css/default.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="{% static 'css/nav.css' %}">
     <link rel="stylesheet" href="{% static 'css/specific.css' %}">
     
-    <link rel="stylesheet" href="../static/css/default.css">
+    <!-- <link rel="stylesheet" href="../static/css/default.css">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/nav.css">
-    <link rel="stylesheet" href="../static/css/specific.css">
+    <link rel="stylesheet" href="../static/css/specific.css"> -->
 
 </head>
 
@@ -184,18 +185,19 @@
             </div>
 
             <div position=5 class='module edge-bottom fifth'>
-                <form action="/">
+                <form action="/form_input" method='post'>
+                    {% csrf_token %}
                     <div class='lax'>
-                        <p>First Name</p><input type="text"></div>
+                        <p>First Name</p><input type="text" name="first_name"></div>
                     <div class='lax'>
-                        <p>Last Name</p><input type="text"></div>
+                        <p>Last Name</p><input type="text" name="last_name"></div>
                     <div class='lax'>
-                        <p>Email</p><input type="text"></div>
+                        <p>Email</p><input type="text" name="email"></div>
                     <div class='lax'>
-                        <p>Cell Phone</p><input type="text"></div>
+                        <p>Cell Phone</p><input type="text" name="cell_phone"></div>
                     <div class='lax'>
                         <p>Do you have a wristband?</p>
-                        <div class='checkboxes'>
+                        <div class='checkboxes' >
 
 
                             <span>Yes</span>
@@ -213,8 +215,8 @@
 
                     </div>
                     <div class='lax'>
-                        <p id='invitation-text'>Invitation number</p><input type="text" id='invitation'></div>
-                    <div class='submit lax'><button type=b utton name='button'>SUBMIT</button></div>
+                        <p id='invitation-text'>Invitation number</p><input type="text" name="invitation"id='invitation'></div>
+                    <div class='submit lax'><button type='submit' name='button'>SUBMIT</button></div>
 
                 </form>
             </div>
