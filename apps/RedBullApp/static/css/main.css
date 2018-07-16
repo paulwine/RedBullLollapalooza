@@ -1,14 +1,42 @@
+.opener {
+  transition: 1s all ease-in-out 0s; }
+
 body {
   display: flex;
   box-sizing: border-box;
   min-width: 800px;
-  min-height: 450px; }
+  min-height: 600px;
+  overflow: hidden; }
+  body .curtain {
+    height: 100%;
+    width: 50%;
+    left: 0;
+    position: absolute;
+    background-color: #6b1826;
+    z-index: 100;
+    transition: all 2s ease-in-out 0s; }
+    body .curtain:nth-of-type(1) div {
+      display: block;
+      right: 70px; }
+    body .curtain:nth-of-type(2) {
+      left: 50%; }
+      body .curtain:nth-of-type(2) div {
+        display: block;
+        left: 40px;
+        text-align: left; }
+    body .curtain div {
+      font-family: "HelveticaThin";
+      position: relative;
+      width: 100%;
+      top: 15%;
+      text-align: right;
+      color: #e29e33; }
   body .background {
     height: 100%;
     width: 100%;
     position: absolute;
     display: block;
-    z-index: -1;
+    z-index: 10;
     overflow: hidden; }
     body .background img {
       position: relative;
@@ -17,12 +45,11 @@ body {
       transition: 0.8s all ease-in-out 0s; }
 
 p {
-  font-size: 16px;
-  font-family: "HelveticaLight"; }
+  font-family: "HelveticaThin";
+  color: #dbd7d8; }
 
 h2 {
-  font-family: "HelveticaBold";
-  font-size: 50px; }
+  font-family: "HelveticaThin"; }
 
 .main {
   position: relative;
@@ -55,18 +82,6 @@ h2 {
     .main .container .invisible {
       visibility: hidden; }
 
-.arrow {
-  position: absolute;
-  display: block;
-  z-index: 20;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  width: 30px;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto; }
-
 .module {
   transition: 0.8s all ease-in-out 0s; }
 
@@ -94,7 +109,7 @@ h2 {
     left: 0;
     right: 0;
     margin: auto;
-    transition: 0.8s all ease-in-out 0.1s; }
+    transition: 0.64s all ease-in-out 0.1s; }
   #left .containerFloat .movingDown {
     transform: translateY(-150px);
     transition: 0s all linear 0s; }
@@ -102,14 +117,47 @@ h2 {
     transform: translateY(150px);
     transition: 0s all linear 0s; }
 
+img.arrow {
+  position: absolute;
+  display: block;
+  margin-bottom: 100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer; }
+
 #right .lax {
   transform: translateY(0);
-  transition: 1s all ease-in-out 0s; }
+  transition: 0.8s all ease-in-out 0s; }
 #right .movingDown {
   transform: translateY(-150px);
   transition: 0s all linear 0s; }
 #right .movingUp {
   transform: translateY(150px);
   transition: 0s all linear 0s; }
+
+img.arrow {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  width: 5%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -30%;
+  transition: 0.54s all ease-in-out 0s;
+  z-index: 200; }
+
+div.start {
+  height: 100%;
+  width: auto;
+  position: absolute; }
+
+.openHa {
+  z-index: 200; }
+  .openHa nav {
+    z-index: 300; }
 
 /*# sourceMappingURL=main.css.map */
