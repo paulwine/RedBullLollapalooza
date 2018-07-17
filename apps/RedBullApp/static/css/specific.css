@@ -1,72 +1,77 @@
 .first {
   z-index: 20; }
   .first img {
-    height: 5%;
-    width: auto;
+    height: 7%;
     display: block;
     position: relative;
-    top: 20%; }
+    top: 200px; }
   .first h1 {
-    top: 15%;
+    top: 250px;
     position: relative;
-    padding-top: 40px;
     color: #e29e33;
     font-family: "HelveticaUltraLight";
     font-size: 110px;
     margin-right: 40px;
     margin-left: 40px;
     letter-spacing: 20px; }
-  .first .main-curate {
-    position: relative;
-    top: 18%;
-    width: 25%;
-    height: auto; }
-  .first div.flex-box {
-    height: 25%;
-    width: 50%;
+
+.sixth .main-curate {
+  height: auto;
+  width: auto;
+  width: 200px;
+  top: 150px;
+  position: absolute;
+  display: block; }
+  .sixth .main-curate:nth-of-type(1) {
+    right: 0; }
+.sixth .rightRox {
+  left: 0; }
+.sixth div.flex-box {
+  height: 25%;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  box-sizing: border-box;
+  top: auto;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  margin-right: 3%;
+  margin-left: 3%; }
+  .sixth div.flex-box div.top {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    box-sizing: border-box;
-    top: auto;
-    bottom: 15%;
-    left: 0;
-    right: 0;
-    margin-right: 3%;
-    margin-left: 3%; }
-    .first div.flex-box div.top {
-      width: 100%;
-      display: flex;
-      height: 50%;
-      justify-content: space-between; }
-    .first div.flex-box div.bottom {
-      width: 100%;
-      display: flex;
-      height: 40%;
-      position: relative;
-      top: 50%;
-      justify-content: space-between; }
-    .first div.flex-box img {
-      display: block;
-      position: relative;
-      width: auto;
-      height: auto;
-      max-height: 70%;
-      max-width: 25%; }
+    height: 50%;
+    justify-content: space-between; }
+  .sixth div.flex-box div.bottom {
+    width: 90%;
+    display: flex;
+    height: 40%;
+    position: relative;
+    top: 50%;
+    justify-content: space-between; }
+  .sixth div.flex-box img {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    max-height: 70%;
+    max-width: 25%; }
 
 #right .first h1 {
   text-align: left; }
 #right .first img {
   margin-right: auto;
   margin-left: 20px; }
-#right .first .flex-box {
+#right .sixth .flex-box {
   margin-right: auto; }
-  #right .first .flex-box .top {
+  #right .sixth .flex-box .top {
     box-sizing: border-box; }
-    #right .first .flex-box .top img {
+    #right .sixth .flex-box .top img {
       margin-left: 0;
       margin-right: 0; }
-  #right .first .flex-box .bottom img {
+  #right .sixth .flex-box .bottom img {
     margin-left: 0;
     margin-right: 0; }
 #right .second {
@@ -109,11 +114,12 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; }
     #right .third ul li {
       position: relative;
-      width: 60%;
+      width: 100%;
       display: block;
       height: 95%;
       margin: 1% 0;
-      box-sizing: default; }
+      box-sizing: default;
+      text-align: center; }
       #right .third ul li svg {
         position: absolute;
         height: 0;
@@ -129,7 +135,7 @@
         color: #dbb64e;
         font-size: 40px; }
       #right .third ul li p {
-        text-align: left;
+        text-align: center;
         position: relative;
         left: 3px;
         top: 0px; }
@@ -137,6 +143,10 @@
       margin-left: auto; }
 #right .fourth p {
   color: #6d6d6d; }
+#right .fourth .tuned {
+  color: #dbd7d8;
+  position: relative;
+  top: 34%; }
 #right .fourth h2 {
   color: #c16332;
   display: inline-block;
@@ -157,17 +167,18 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  padding-right: 3%;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
   top: auto; }
   #right .fourth .flex-box .top {
     width: 100%;
     position: relative;
     height: 40%; }
     #right .fourth .flex-box .top p {
-      padding-right: 4%;
       box-sizing: border-box;
       width: 100%;
-      text-align: right;
+      text-align: center;
       position: absolute;
       display: block;
       top: auto;
@@ -225,16 +236,18 @@
         background-color: #151516;
         border: #45bfa2 1px solid;
         padding-left: 5px;
-        height: 31.5px;
+        height: 21px;
         position: relative;
-        margin-top: 15px;
         width: 100%;
         color: #dbd7d8; }
-      #right .fifth form div p {
+      #right .fifth form div ty {
         text-align: left;
         padding-left: 5px;
         color: #45bfa2;
-        margin-bottom: 2px; }
+        height: 16px;
+        font-size: 16px;
+        font-family: "HelveticaThin";
+        padding-bottom: 10px; }
       #right .fifth form div .disabled {
         color: #3f3e3f;
         border-color: #3f3e3f; }
@@ -310,20 +323,22 @@
   margin-right: 10px; }
 #left img {
   margin-left: auto;
-  margin-right: 20px; }
-#left .flex-box {
+  margin-right: 0; }
+#left .sixth .flex-box {
   margin-left: auto; }
-  #left .flex-box .top {
+  #left .sixth .flex-box .top {
     box-sizing: border-box; }
-    #left .flex-box .top img {
+    #left .sixth .flex-box .top img {
       margin-left: 0;
-      margin-right: -10px;
       max-width: 40%; }
-  #left .flex-box .bottom img {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0 10px;
-    box-sizing: border-box; }
+  #left .sixth .flex-box .bottom {
+    position: absolute;
+    right: 0; }
+    #left .sixth .flex-box .bottom img {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 10px;
+      box-sizing: border-box; }
 #left .third {
   overflow: hidden; }
   #left .third .background {
