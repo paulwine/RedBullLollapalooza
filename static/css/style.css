@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'HelveticaUltraLight';
+    src: url('font/HelveticaNeue-UltraLight-03.ttf') format('truetype');
+}@font-face {
+    font-family: 'HelveticaBold';
+    src: url('font/HelveticaNeue-Bold-01.ttf') format('truetype');
+}@font-face {
+    font-family: 'HelveticaLight';
+    src: url('font/HelveticaNeue-Light-05.ttf') format('truetype');
+}@font-face {
+    font-family: 'HelveticaThin';
+    src: url('font/HelveticaNeue-Thin-12.ttf') format('truetype');
+}
+

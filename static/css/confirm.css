@@ -1,0 +1,17 @@
+body {
+  background-image: url("../img/Background.png"); }
+  body h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: #e29e33;
+    width: 80%;
+    top: 20%;
+    font-family: "HelveticaThin";
+    position: relative;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
+
+/*# sourceMappingURL=confirm.css.map */

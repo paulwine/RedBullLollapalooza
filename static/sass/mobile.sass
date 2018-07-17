@@ -1,0 +1,352 @@
+@import "styles"
+
+#mobile
+    @media #{$mediaLarge}
+        display: none
+    
+    @media #{$mediaSmall}
+        display: block
+        width: 100%
+        height: 100%
+        position: absolute
+            
+        
+.mobile-section
+    position: static        
+    min-height: 100%
+    min-width: 100%
+    padding-bottom: 20%
+    box-sizing: border-box
+    background-image: url("../img/Background.png")
+    img
+        height: auto
+        width: auto
+        max-width: 80px
+        max-height: 80px
+
+.landing
+    height: 100%
+    width: 100% 
+
+    div
+        height: 30%
+        width: 100%
+        box-sizing: border-box
+        display: flex
+        justify-content: space-between
+        padding: 0 15%
+
+
+        img
+
+            max-height: 50px
+            max-width: 48%
+            display: block
+            position: relative
+            margin-top: auto
+            margin-bottom: auto
+    h1
+        font-size: 3.5rem
+        font-family: $hThin
+        color: $letterOrange
+        width: 100%
+        text-align: center
+     
+.mobile-header
+    height: $headerHeight
+    width: 100%
+    position: static
+    display: block
+    box-sizing: border-box
+    position: relative
+    overflow: hidden
+    
+    img
+        position: absolute
+    
+    h2
+        color: $whiteDots
+        font-size: 2rem
+        width: 100%
+        text-align: center
+        position: relative
+        display: block
+        top: 35%
+        
+.www
+    .mobile-header
+        background-color: $red
+        
+    img
+        &:nth-of-type(1)
+            top: 60%
+            left: 4%        
+        &:nth-of-type(2)
+            top: 25%
+            left: 47%         
+        &:nth-of-type(3)
+            top: 27%
+            left: 84%
+    
+    h3
+        color: $red
+        width: 100%
+        margin-top: 40px
+        font-size: 3rem
+        font-family: $hThin
+        text-align: center
+        
+    p
+        margin-top: 10px
+        font-size: $bodySize - 2
+        line-height: $bodySize
+        text-align: center
+        width: 80%
+        @include center
+        
+.collab
+    .mobile-header
+        background-color: $yellow
+        img
+            &:nth-of-type(1)
+                top: 10%
+                left: -5%
+                                
+            &:nth-of-type(2)
+                top: 70%
+                left: 16%
+                                
+            &:nth-of-type(3)
+                top: 70%
+                left: 47%
+                transform: rotate(300deg)
+                                
+            &:nth-of-type(4)
+                top: 20%
+                left: 65%
+                                
+            &:nth-of-type(5)
+                top: 80%
+                left: 80%
+    ul
+        width: 100%
+        li
+            height: 150px
+            width: 100%
+            h3
+                color: $yellow
+                font-size: 3rem
+                font-family: $hBold
+                width: 100%
+                text-align: center
+                margin-top: 40px
+            p
+                width: 100%
+                text-align: center
+                margin-top: 10px
+                font-size: $bodySize - 5
+                
+.performers
+    .mobile-header
+        background-color: $orange
+        img
+            &:nth-of-type(1)
+                top: 20%
+                left: 10%
+                transform: rotate(20deg)            
+            
+            &:nth-of-type(2)
+                top: 70%
+                left: 40%
+                transform: rotate(300deg)            
+            
+            &:nth-of-type(3)
+                top: 60%
+                left: 70%
+                transform: rotate(10deg)            
+            
+            &:nth-of-type(4)
+                top: 10%
+                left: 90%
+                transform: rotate(300deg)
+            
+    h3
+        font-size: 2.5rem
+        font-family: $hThin
+        color: $orange
+        width: 100%
+        text-align: center
+        margin-top: 100px
+        
+    .flex-box
+        width: 60%
+        height: 200px
+        margin-top: 80px
+        @include center
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        
+        .top
+            width: 100%
+            font-size: $bodySize
+            text-align: center
+            height: 50%
+            box-sizing: border-box
+            p
+                color: $grayColor
+                position: relative
+                top: 70%
+        .bottom
+            width: 100%
+            height: 50%
+            display: flex
+            justify-content: space-between
+            
+            .tall
+                max-width: 12%
+                
+            .wide
+                max-width: 20%
+                
+.RSVP
+    .mobile-header
+        background-color: $turquoise
+        img
+            &:nth-of-type(1)
+                top: 70%
+                left: 10%
+                transform: rotate(-10deg)
+                                
+            &:nth-of-type(2)
+                top: 7%
+                left: 30%
+                transform: rotate(-15deg)            
+            
+            &:nth-of-type(3)
+                top: 20%
+                left: 80%
+                transform: rotate(-35deg)
+              
+            
+    form
+        position: relative
+        width: 90%
+        margin-top: 100px
+        height: 50%
+        @include center
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr 1fr
+        div
+            position: relative
+            box-sizing: border-box
+            width: 90%
+            @include center
+
+            input
+                background-color: $navColor
+                border: $turquoise 1px solid
+                padding-left: 5px
+                height: $bodySize * 1.5
+                position: relative
+                margin-top: 5px
+                width: 100%
+                color: $whiteDots
+
+            p
+                text-align: left
+                padding-left: 5px
+                color: $turquoise
+                margin-top: 30px
+                height: $bodySize
+                font-size: $bodySize - 5
+                margin-bottom: 10px
+
+            .disabled
+                color: $dots
+                border-color: $dots
+
+        .checkboxes
+            margin-left: 0
+            display: flex
+            justify-content: space-between
+            height: 100%
+            float: left
+            width: 100%
+
+            .fakebox
+                width: 20px
+                height: 20px
+                position: relative
+                top: $bodySize 
+                display: inline-block
+                background-color: $navColor
+                border: solid 1px $turquoise
+                padding-left: 5px
+                cursor: pointer
+                overflow: hidden
+
+                .check
+                    width: $bodySize * 2
+                    height: $bodySize * 2
+                    border-radius: $bodySize / 2
+                    background-color: $whiteDots
+                    display: block
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: 0
+                    bottom: 0
+                    margin: auto
+                    transition: all .1s linear 0s
+
+                .hide
+                    width: 0px
+                    height: 0px
+
+            input
+                display: none
+                background-color: $navColor
+                cursor: pointer
+
+            span
+                padding-left: 5px
+                color: $turquoise
+                font-size: $bodySize
+                font-family: $hLight
+                position: relative
+                top: $bodySize
+                height: $bodySize
+                box-sizing: border-box
+
+    .submit
+        position: relative
+        top: 30px
+        grid-column: 1 /span 2
+
+        button
+            background-color: $turquoise
+            color: $navColor
+            font-family: $hBold
+            border: none
+            font-size: $bodySize * 1.5
+            @include center
+            width: 50%
+            top: $bodySize
+            cursor: pointer
+            
+    .subtext
+        position: static
+        margin-top: 90px
+        width: 70%
+        @include center
+        text-align: center
+        line-height: $bodySize 
+        font-size: $bodySize
+        
+        p
+            color: $grayColor
+                    
+                    
+                    
