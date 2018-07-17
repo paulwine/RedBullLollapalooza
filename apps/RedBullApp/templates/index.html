@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedBull Curates</title>
-    <link rel="stylesheet" href="../static/css/default.css">
+    <!-- <link rel="stylesheet" href="../static/css/default.css">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/nav.css">
     <link rel="stylesheet" href="../static/css/specific.css">
-    <link rel="stylesheet" href="../static/css/mobile.css">
+    <link rel="stylesheet" href="../static/css/mobile.css"> -->
 
     <!--    {% load static %}-->
     <link rel="stylesheet" href="{% static 'css/default.css' %}">
@@ -278,7 +278,8 @@
             </div>
 
             <div position=5 class='module edge-bottom fifth'>
-                <form action="/" class="lax">
+                <form action="/form_input" method="POST" class="lax">
+                    {% csrf_token %}
                     <div class=''>
                         <ty>First Name</ty><input name="first_name" type="text"></div>
                     <div class=''>
@@ -286,12 +287,12 @@
                     <div class=''>
                         <ty>Email</ty><input name="email" type="text"></div>
                     <div class=''>
-                        <ty>Cell Phone</ty><input type="text"></div>
+                        <ty>Cell Phone</ty><input name ="phone"type="text"></div>
                     <div class="">
-                        <ty>Industry Affiliation</ty><input type="text">
+                        <ty>Industry Affiliation</ty><input name="affiliation" type="text">
                     </div>
                     <div class="">
-                        <ty>Who extended your invitation?</ty><input type="text">
+                        <ty>Who extended your invitation?</ty><input name="referall"type="text">
                     </div>
                     <div class=''>
                         <ty>Do you have a wristband?</ty>
@@ -314,7 +315,7 @@
                     </div>
                     <div class='lax'>
                         <ty class='invitation-text'>Invitation number</ty><input name="invitation" type="text" class='invitation'></div>
-                    <div class='submit lax'><button type=b utton name='button'>SUBMIT</button></div>
+                    <div class='submit lax'><button type='submit' name='button'>SUBMIT</button></div>
                 </form>
 
                 <div class="subtext lax">
@@ -452,7 +453,8 @@
                 <h2>RSVP</h2>
             </div>
             <div class="mobile-body fifth">
-                <form action="/" class="lax">
+                <form action="/form_input" method="POST" class="lax">
+                    {% csrf_token %}
                     <div>
                         <p>First Name</p><input name="first_name" type="text"></div>
                     <div>
@@ -460,12 +462,12 @@
                     <div class=''>
                         <p>Email</p><input name="email" type="text"></div>
                     <div class=''>
-                        <p>Cell Phone</p><input type="text"></div>
+                        <p>Cell Phone</p><input name="phone"type="text"></div>
                     <div class="">
-                        <p>Industry Affiliation</p><input type="text">
+                        <p>Industry Affiliation</p><input name="affiliation" type="text">
                     </div>
                     <div class="">
-                        <p>Who extended your invitation?</p><input type="text">
+                        <p>Who extended your invitation?</p><input name="referall" type="text">
                     </div>
                     <div class='long'>
                         <p>Do you have a wristband?</p>
@@ -488,7 +490,7 @@
                     </div>
                     <div class="long">
                         <p class='invitation-text'>Invitation number</p><input name="invitation" type="text" class='invitation'></div>
-                    <div class='submit'><button type=b utton name='button'>SUBMIT</button></div>
+                    <div class='submit'><button type='submit' name='button'>SUBMIT</button></div>
                 </form>
 
                 <div class="subtext">
