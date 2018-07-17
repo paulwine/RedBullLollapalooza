@@ -1,0 +1,412 @@
+@import 'styles'
+
+.first
+    z-index: 20
+    
+    img
+        
+        height: 7%
+        display: block
+        position: relative
+        top: 200px
+
+    h1
+        top: 250px
+        position: relative
+        color: $letterOrange
+        font-family: $hUltraLight
+        font-size: 110px
+        margin-right: $landingMargin
+        margin-left: $landingMargin
+        letter-spacing: 20px
+        
+
+ 
+.sixth
+    .main-curate
+        height: auto
+        width: auto
+        width: 200px
+        top: 150px
+        position: absolute
+        display: block
+        
+        &:nth-of-type(1)
+            right: 0
+        
+    .rightRox
+        left: 0
+
+        
+            
+    div.flex-box
+        height: 25%
+        width: 70%
+        display: flex
+        flex-wrap: wrap
+        position: absolute
+        box-sizing: border-box
+        top: auto
+        bottom: 20%
+        left: 0
+        right: 0
+        margin-right: 3%
+        margin-left: 3%
+
+        div.top
+            width: 100%
+            display: flex
+            height: 50%
+            justify-content: space-between
+
+
+        div.bottom
+            width: 90%
+            display: flex
+            height: 40%
+            position: relative
+            top: 50%
+            justify-content: space-between
+
+
+        img
+            display: block
+            position: relative
+            width: auto
+            height: auto
+            max-height: 70%
+            max-width: 25%
+
+            
+        
+        
+#right
+    .first
+        h1
+            text-align: left
+
+            
+        img
+            margin-right: auto
+            margin-left: $landingMargin / 2
+            
+    .sixth
+        .flex-box
+            margin-right: auto
+            .top
+                box-sizing: border-box
+                img
+                    margin-left: 0
+                    margin-right: 0
+            .bottom
+                img
+                    margin-left: 0
+                    margin-right: 0
+
+            
+    .second
+        display: grid
+        grid-template-rows: 1fr 1fr 1fr
+        box-sizing: border-box
+        padding-top: 0
+        div
+            &:nth-of-type(3)
+                margin-top: 1%
+        
+        div
+            margin-top: 5%
+            height: auto
+            position: relative
+            width: $sectionWidth
+            display: block
+            margin-right: auto
+            margin-left: auto
+            box-sizing: border-box
+            
+            
+            h2
+                color: $red
+                text-align: left
+            p
+                text-align: left
+                position: relative
+                top: 0
+                
+    .third
+        min-height: 570px
+        box-sizing: border-box
+        padding-left: 5%
+        ul
+            padding: 5% 0 
+            box-sizing: border-box
+            height: 100% 
+            width: $sectionWidth
+            @include center
+            display: grid
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 
+            
+            li
+                position: relative
+                width: 100%
+                display: block
+                height: 95%
+                margin: 1% 0
+                box-sizing: default
+                text-align: center
+            
+                svg
+                    position: absolute
+                    height: 0
+                    width: 0
+                    z-index: 30
+                    left: 0
+                    circle
+                        r: 20px
+                        cy: 20px
+                        cx: 20px
+                        fill: $whiteDots
+                h2
+                    color: $yellow
+                    font-size: $titleSize * .8
+                    
+                p
+                    text-align: center
+                    position: relative
+                    left: 3px
+                    top: 0px
+                    
+                    
+            .right
+                margin-left: auto
+                
+    .fourth
+        p
+            color: $grayColor
+            
+        .tuned
+            color: $whiteDots
+            position: relative
+            top: 34%
+        h2
+            color: $orange
+            display: inline-block
+            text-align: center
+            @include center
+            top: 30%
+            
+            span
+                font-family: $hThin
+                
+        .flex-box
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            height: 20%
+            width: 50%
+            position: absolute
+            bottom: 0
+            right: 0
+            left: 0
+            margin-left: auto
+            margin-right: auto
+            top: auto
+            
+            .top
+                width: 100%
+                position: relative
+                height: 40%
+                p
+                    box-sizing: border-box
+                    width: 100%
+                    text-align: center
+                    position: absolute
+                    display: block
+                    top: auto
+                    bottom: 0
+                    
+                
+            .bottom
+                width: 100%
+                height: 40%
+                position: relative
+                display: flex
+                justify-content: space-between
+                
+                img
+                    height: aut0
+                    width: auto
+                    max-width: 19%
+                    max-height: 70%
+                    position: relative
+                    display: block
+                    margin: auto
+                    
+            
+                
+            
+    .fifth
+        padding-top: 10%
+        box-sizing: border-box
+        p
+            color: $grayColor
+        
+        
+        div.subtext
+            position: absolute
+            height: 40%
+            width: 60%
+            display: block
+            left: 0
+            right: 0
+            margin-left: auto
+            margin-right: auto
+            top: auto
+            bottom: 0px
+            
+        form
+            position: relative
+            width: $sectionWidth + 10
+            height: 50%
+            @include center
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr 1fr 1fr
+            
+            div
+                position: relative
+                box-sizing: border-box
+                width: $sectionWidth
+                @include center
+                    
+                input
+                    background-color: $navColor
+                    border: $turquoise 1px solid
+                    padding-left: 5px
+                    height: $bodySize
+                    position: relative
+                    width: 100%
+                    color: $whiteDots
+
+                ty
+                    text-align: left
+                    padding-left: 5px
+                    color: $turquoise
+                    height: $bodySize - 5
+                    font-size: $bodySize - 5
+                    font-family: $hThin
+                    padding-bottom: 10px
+                    
+                .disabled
+                    color: $dots
+                    border-color: $dots
+                
+            .checkboxes
+                margin-left: 0
+                display: flex
+                justify-content: space-between
+                height: 100%
+                float: left
+                width: 60%
+                
+                .fakebox
+                    width: $bodySize * 1.2
+                    height: $bodySize * 1.2
+                    position: relative
+                    top: $bodySize 
+                    display: inline-block
+                    background-color: $navColor
+                    border: solid 1px $turquoise
+                    padding-left: 5px
+                    cursor: pointer
+                    overflow: hidden
+                    
+                    .check
+                        width: $bodySize * 2
+                        height: $bodySize * 2
+                        border-radius: $bodySize / 2
+                        background-color: $whiteDots
+                        display: block
+                        position: absolute
+                        top: 0
+                        left: 0
+                        right: 0
+                        bottom: 0
+                        margin: auto
+                        transition: all .1s linear 0s
+                        
+                    .hide
+                        width: 0px
+                        height: 0px
+                    
+                input
+                    display: none
+                    background-color: $navColor
+                    cursor: pointer
+
+                span
+                    padding-left: 5px
+                    color: $turquoise
+                    font-size: $bodySize
+                    font-family: $hLight
+                    position: relative
+                    top: $bodySize + 5px
+                    height: $bodySize
+                    box-sizing: border-box
+                    
+        .submit
+            position: relative
+            top: 9%
+            grid-column: 1 /span 2
+            
+            button
+                background-color: $turquoise
+                color: $navColor
+                font-family: $hBold
+                border: none
+                font-size: $bodySize * 1.5
+                @include center
+                width: 50%
+                top: $bodySize
+                cursor: pointer
+                    
+        
+            
+
+                
+#left
+    .first
+        .main-curate
+            top: 19%
+        h1
+            text-align: right
+            margin-right: 10px
+    img
+        margin-left: auto
+        margin-right: 0
+        
+    .sixth
+        .flex-box
+            margin-left: auto
+            .top
+                box-sizing: border-box
+                img
+                    margin-left: 0
+                    max-width: 40%
+
+            .bottom
+                position: absolute
+                right: 0
+                img
+                    margin-left: 0
+                    margin-right: 0
+                    padding: 0 10px
+                    box-sizing: border-box
+                    
+        
+    .third
+        overflow: hidden
+        .background
+            height: auto
+            width: 100%
+        
+    
