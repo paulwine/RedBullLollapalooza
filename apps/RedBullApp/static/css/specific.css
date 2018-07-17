@@ -1,34 +1,89 @@
 .first {
-  padding-top: 30%; }
+  z-index: 20; }
   .first img {
-    height: 20px;
+    height: 5%;
     width: auto;
     display: block;
-    position: relative; }
+    position: relative;
+    top: 20%; }
   .first h1 {
+    top: 15%;
+    position: relative;
+    padding-top: 40px;
     color: #e29e33;
     font-family: "HelveticaUltraLight";
-    font-size: 120px;
-    margin-right: 20px;
-    margin-left: 20px;
-    letter-spacing: 15px; }
+    font-size: 110px;
+    margin-right: 40px;
+    margin-left: 40px;
+    letter-spacing: 20px; }
+  .first .main-curate {
+    position: relative;
+    top: 18%;
+    width: 25%;
+    height: auto; }
+  .first div.flex-box {
+    height: 25%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    box-sizing: border-box;
+    top: auto;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    margin-right: 3%;
+    margin-left: 3%; }
+    .first div.flex-box div.top {
+      width: 100%;
+      display: flex;
+      height: 50%;
+      justify-content: space-between; }
+    .first div.flex-box div.bottom {
+      width: 100%;
+      display: flex;
+      height: 40%;
+      position: relative;
+      top: 50%;
+      justify-content: space-between; }
+    .first div.flex-box img {
+      display: block;
+      position: relative;
+      width: auto;
+      height: auto;
+      max-height: 70%;
+      max-width: 25%; }
 
 #right .first h1 {
   text-align: left; }
 #right .first img {
   margin-right: auto;
-  margin-left: 10px; }
+  margin-left: 20px; }
+#right .first .flex-box {
+  margin-right: auto; }
+  #right .first .flex-box .top {
+    box-sizing: border-box; }
+    #right .first .flex-box .top img {
+      margin-left: 0;
+      margin-right: 0; }
+  #right .first .flex-box .bottom img {
+    margin-left: 0;
+    margin-right: 0; }
 #right .second {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr; }
+  grid-template-rows: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  padding-top: 0; }
+  #right .second div:nth-of-type(3) {
+    margin-top: 1%; }
   #right .second div {
+    margin-top: 5%;
     height: auto;
     position: relative;
-    width: 90%;
+    width: 75%;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 10%;
     box-sizing: border-box; }
     #right .second div h2 {
       color: #c24c46;
@@ -38,23 +93,27 @@
       position: relative;
       top: 0; }
 #right .third {
-  min-height: 570px; }
+  min-height: 570px;
+  box-sizing: border-box;
+  padding-left: 5%; }
   #right .third ul {
-    padding-top: 160px;
+    padding: 5% 0;
     box-sizing: border-box;
     height: 100%;
-    width: 90%;
+    width: 75%;
     position: relative;
     display: block;
     margin-right: auto;
     margin-left: auto;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; }
     #right .third ul li {
-      margin-top: -80px;
       position: relative;
-      width: 50%;
-      display: block; }
+      width: 60%;
+      display: block;
+      height: 95%;
+      margin: 1% 0;
+      box-sizing: default; }
       #right .third ul li svg {
         position: absolute;
         height: 0;
@@ -72,10 +131,12 @@
       #right .third ul li p {
         text-align: left;
         position: relative;
-        left: 10px;
+        left: 3px;
         top: 0px; }
     #right .third ul .right {
       margin-left: auto; }
+#right .fourth p {
+  color: #6d6d6d; }
 #right .fourth h2 {
   color: #c16332;
   display: inline-block;
@@ -84,112 +145,185 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
-  top: 40%; }
+  top: 30%; }
   #right .fourth h2 span {
     font-family: "HelveticaThin"; }
-#right .fifth form {
-  width: 90%;
-  height: 60%;
-  top: 20%;
-  position: relative;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr; }
-  #right .fifth form div {
+#right .fourth .flex-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 20%;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 3%;
+  top: auto; }
+  #right .fourth .flex-box .top {
+    width: 100%;
     position: relative;
-    box-sizing: border-box;
-    width: 80%;
-    position: relative;
-    display: block;
-    margin-right: auto;
-    margin-left: auto; }
-    #right .fifth form div input {
-      background-color: #151516;
-      border: #45bfa2 1px solid;
-      padding-left: 5px;
-      height: 24px;
-      position: relative;
-      top: 16px;
+    height: 40%; }
+    #right .fourth .flex-box .top p {
+      padding-right: 4%;
+      box-sizing: border-box;
       width: 100%;
-      color: #dbd7d8; }
-    #right .fifth form div p {
-      text-align: left;
-      padding-left: 5px;
-      color: #45bfa2;
-      margin-bottom: 10px; }
-    #right .fifth form div .disabled {
-      color: #3f3e3f;
-      border-color: #3f3e3f; }
-  #right .fifth form .checkboxes {
-    margin-left: 0;
+      text-align: right;
+      position: absolute;
+      display: block;
+      top: auto;
+      bottom: 0; }
+  #right .fourth .flex-box .bottom {
+    width: 100%;
+    height: 40%;
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    height: 100%;
-    float: left;
-    width: 60%; }
-    #right .fifth form .checkboxes .fakebox {
-      width: 19.2px;
-      height: 19.2px;
+    justify-content: space-between; }
+    #right .fourth .flex-box .bottom img {
+      height: aut0;
+      width: auto;
+      max-width: 19%;
+      max-height: 70%;
       position: relative;
-      top: 21px;
-      display: inline-block;
-      background-color: #151516;
-      border: solid 1px #45bfa2;
-      padding-left: 5px;
-      cursor: pointer; }
-      #right .fifth form .checkboxes .fakebox .check {
-        width: 8px;
-        height: 8px;
-        border-radius: 8px;
-        background-color: #dbd7d8;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        transition: all 0.1s linear 0s; }
-      #right .fifth form .checkboxes .fakebox .hide {
-        width: 0px;
-        height: 0px; }
-    #right .fifth form .checkboxes input {
-      display: none;
-      background-color: #151516;
-      cursor: pointer; }
-    #right .fifth form .checkboxes span {
-      padding-left: 5px;
-      color: #45bfa2;
-      font-size: 16px;
-      font-family: "HelveticaLight";
-      position: relative;
-      top: 21px;
-      height: 16px;
-      box-sizing: border-box; }
-#right .fifth .submit {
-  grid-column: 1/span 2; }
-  #right .fifth .submit button {
-    background-color: #45bfa2;
-    color: #151516;
-    font-family: "HelveticaLight";
-    border: none;
-    font-size: 24px;
+      display: block;
+      margin: auto; }
+#right .fifth {
+  padding-top: 10%;
+  box-sizing: border-box; }
+  #right .fifth p {
+    color: #6d6d6d; }
+  #right .fifth div.subtext {
+    position: absolute;
+    height: 40%;
+    width: 60%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: auto;
+    bottom: 0px; }
+  #right .fifth form {
+    position: relative;
+    width: 85%;
+    height: 50%;
     position: relative;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 50%;
-    top: 16px;
-    cursor: pointer; }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; }
+    #right .fifth form div {
+      position: relative;
+      box-sizing: border-box;
+      width: 75%;
+      position: relative;
+      display: block;
+      margin-right: auto;
+      margin-left: auto; }
+      #right .fifth form div input {
+        background-color: #151516;
+        border: #45bfa2 1px solid;
+        padding-left: 5px;
+        height: 31.5px;
+        position: relative;
+        margin-top: 15px;
+        width: 100%;
+        color: #dbd7d8; }
+      #right .fifth form div p {
+        text-align: left;
+        padding-left: 5px;
+        color: #45bfa2;
+        margin-bottom: 2px; }
+      #right .fifth form div .disabled {
+        color: #3f3e3f;
+        border-color: #3f3e3f; }
+    #right .fifth form .checkboxes {
+      margin-left: 0;
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      float: left;
+      width: 60%; }
+      #right .fifth form .checkboxes .fakebox {
+        width: 25.2px;
+        height: 25.2px;
+        position: relative;
+        top: 21px;
+        display: inline-block;
+        background-color: #151516;
+        border: solid 1px #45bfa2;
+        padding-left: 5px;
+        cursor: pointer;
+        overflow: hidden; }
+        #right .fifth form .checkboxes .fakebox .check {
+          width: 42px;
+          height: 42px;
+          border-radius: 10.5px;
+          background-color: #dbd7d8;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          transition: all 0.1s linear 0s; }
+        #right .fifth form .checkboxes .fakebox .hide {
+          width: 0px;
+          height: 0px; }
+      #right .fifth form .checkboxes input {
+        display: none;
+        background-color: #151516;
+        cursor: pointer; }
+      #right .fifth form .checkboxes span {
+        padding-left: 5px;
+        color: #45bfa2;
+        font-size: 21px;
+        font-family: "HelveticaLight";
+        position: relative;
+        top: 26px;
+        height: 21px;
+        box-sizing: border-box; }
+  #right .fifth .submit {
+    position: relative;
+    top: 9%;
+    grid-column: 1/span 2; }
+    #right .fifth .submit button {
+      background-color: #45bfa2;
+      color: #151516;
+      font-family: "HelveticaThin";
+      border: none;
+      font-size: 31.5px;
+      position: relative;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      width: 50%;
+      top: 21px;
+      cursor: pointer; }
 
+#left .first .main-curate {
+  top: 19%; }
 #left .first h1 {
-  text-align: right; }
+  text-align: right;
+  margin-right: 10px; }
 #left img {
   margin-left: auto;
-  margin-right: 10px; }
+  margin-right: 20px; }
+#left .flex-box {
+  margin-left: auto; }
+  #left .flex-box .top {
+    box-sizing: border-box; }
+    #left .flex-box .top img {
+      margin-left: 0;
+      margin-right: -10px;
+      max-width: 40%; }
+  #left .flex-box .bottom img {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 10px;
+    box-sizing: border-box; }
 #left .third {
   overflow: hidden; }
   #left .third .background {
