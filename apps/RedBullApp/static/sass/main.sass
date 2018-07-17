@@ -1,40 +1,86 @@
 @import 'styles'
 
+.opener
+    transition: 1s all ease-in-out 0s
+    
+
 body
     display: flex
     box-sizing: border-box
     min-width: 800px
-    min-height: 450px
+    overflow: hidden 
+    @media #{$mediaSmall}
+        overflow: auto
+        min-width: 0px
+    
+    
+    .curtain
+        height: 100%
+        width: 50%
+        left: 0
+        position: absolute
+        background-color: $maroon
+        z-index: 100
+        transition: all 2s $bezier 0s
+        
+        &:nth-of-type(1)
+            div
+                display: block
+                right: $landingMargin + 30
+            
+           
+        
+        &:nth-of-type(2)
+            left: 50%
+            
+            div
+                display: block
+                left: $landingMargin
+                text-align: left
+        
+        div
+            font-family: $hThin
+            position: relative
+            width: 100%
+            top: 15%
+            text-align: right
+            color: $letterOrange
+                
+
     
     .background
         height: 100%
         width: 100%
         position: absolute
         display: block
-        z-index: -1 
+        z-index: 10
         overflow: hidden
+        @media #{$mediaSmall}
+            display: none
+        
         
         img
             position: relative
             transform: translateY(0%)
             top: -5%
-            transition: $time all ease-in-out 0s
+            transition: $time all $bezier 0s
             
  
 
 p
-    font-size: $bodySize
-    font-family: $hLight
+    font-family: $hThin
+    color: $whiteDots
 h2
     font-family: $hBold
-    font-size: $titleSize
 .main
-    position: relative
+    position: absolute
     height: 100%
     width: 100%
     display: flex
     justify-content: space-between
-    color: white
+    @media #{$mediaSmall}
+        display: none
+
     
     .container
         display: block
@@ -53,6 +99,7 @@ h2
             display: block
             box-sizing: border
             top: 0
+            
 
             p
                 position: relative
@@ -64,20 +111,10 @@ h2
         .invisible
             visibility: hidden
             
-.arrow
-    position: absolute
-    display: block
-    z-index: 20
-    bottom: 20px
-    left: 0
-    right: 0
-    width: 30px
-    box-sizing: border-box
-    margin-left: auto
-    margin-right: auto
+
     
 .module
-    transition:  $time all ease-in-out 0s
+    transition:  $time all $bezier 0s
     
 #left
     .containerFloat
@@ -111,7 +148,7 @@ h2
             left: 0
             right: 0
             margin: auto
-            transition: ($time) all ease-in-out (.1s)
+            transition: ($time * .8) all ease-in-out (.1s)
         
         .movingDown
             transform: translateY(-$yMovement)
@@ -121,13 +158,24 @@ h2
             transform: translateY($yMovement)
             transition: 0s all linear 0s
             
+img.arrow
+    position: absolute
+    display: block
+    margin-bottom: 100px
+    left: 0
+    right: 0
+    margin-left: auto
+    margin-right: auto
+    cursor: pointer
+
 
         
 #right
     
+    
         .lax
             transform: translateY(0)
-            transition: ($time * 1.25) all ease-in-out 0s
+            transition: ($time) all $bezier 0s
         
         .movingDown
             transform: translateY(-$yMovement)
@@ -137,6 +185,29 @@ h2
             transform: translateY($yMovement)
             transition: 0s all linear 0s
 
+            
+img.arrow
+    position: absolute
+    display: block
+    left: 0
+    right: 0
+    width: 5%
+    height: auto
+    margin-left: auto
+    margin-right: auto
+    bottom: -30%
+    transition: .54s all $bezier 0s
+    z-index: 200
+
+div.start
+    height: 100%
+    width: auto
+    position: absolute
     
+.openHa
+    z-index: 200
+    
+    nav
+        z-index: 300
 
         

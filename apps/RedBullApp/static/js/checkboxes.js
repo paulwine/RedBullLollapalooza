@@ -1,37 +1,60 @@
-let inputs = document.querySelector('.checkboxes').getElementsByTagName('input');
+//let inputs = document.querySelector('.checkboxes').getElementsByTagName('input');
 
-let fakeBoxes = document.querySelector('.checkboxes').getElementsByClassName('fakebox');
+let inputs = new Array;
 
-function checkBox(box){
-    for(let each of fakeBoxes){
+for (let each of document.querySelectorAll('.checkboxes')) {
+    for (let input of each.querySelectorAll('input')) {
+        inputs.push(input);
+    }
+}
+
+let fakeBoxes = document.getElementsByClassName('fakebox');
+
+//let fakeMobile = document.querySelector('#mobile').querySelector('.checkboxes').getElementsByClassName('fakebox');
+
+console.log(fakeBoxes);
+
+function checkBox(box) {
+    for (let each of fakeBoxes) {
         each.querySelector('.check').classList.add('hide');
-    }    
+    }
     box.querySelector('.check').classList.remove('hide');
-    
-    for (let each of inputs){
+
+    for (let each of inputs) {
         each.checked = false;
-        if(each.getAttribute('name') === box.getAttribute('name')){
+        if (each.getAttribute('name') === box.getAttribute('name')) {
             each.checked = true;
-            
-            if (each.getAttribute('name') === 'no'){
-                document.querySelector('#invitation').disabled = true;
-                document.querySelector('#invitation').value = "";
-                
-                document.querySelector('#invitation').classList.add('disabled');
-                document.querySelector('#invitation-text').classList.add('disabled');
-                
-            }else{
-                document.querySelector('#invitation').disabled = false;    
-                document.querySelector('#invitation').classList.remove('disabled');
-                document.querySelector('#invitation-text').classList.remove('disabled');
+
+            if (each.getAttribute('name') === 'no') {
+
+                for (let each of document.getElementsByClassName('invitation')) {
+                    each.disabled = true;
+                    each.value = "";
+                    each.classList.add('disabled');
+                }
+                for (let each of document.getElementsByClassName('invitation-text')) {
+                    each.classList.add('disabled');
+                }
+
+            } else {
+
+                for (let each of document.getElementsByClassName('invitation')) {
+                    console.log(each);
+                    each.disabled = false;
+                    each.classList.remove('disabled');
+                }
+                for (let each of document.getElementsByClassName('invitation-text')) {
+                    each.classList.remove('disabled');
+                }
+
             }
         }
     }
-    
+
 }
 
-for(let each of fakeBoxes){
-    each.onclick = function(){
+for (let each of fakeBoxes) {
+    each.onclick = function () {
         checkBox(each);
     }
 }
