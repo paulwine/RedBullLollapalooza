@@ -29,7 +29,7 @@ def form_input(request):
     
     
     send_mail(
-    'Thank you for partying with us',
+    'Thank you for partying with us!',
     'RedBull',
     'RedBullVillaRiad@gmail.com',
     [email],
