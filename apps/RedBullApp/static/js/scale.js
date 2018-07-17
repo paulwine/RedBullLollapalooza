@@ -48,7 +48,7 @@ body.onload = function () {
 
 }
 for (let each of titleFirst) {
-    let object = new typeObject(each, .1);
+    let object = new typeObject(each, .12);
     resize(object);
     fontItems.push(object);
 }
