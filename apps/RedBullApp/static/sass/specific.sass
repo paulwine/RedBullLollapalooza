@@ -15,7 +15,6 @@
         position: relative
         color: $letterOrange
         font-family: $hUltraLight
-        font-size: 110px
         margin-right: $landingMargin
         margin-left: $landingMargin
         letter-spacing: 20px
@@ -26,16 +25,19 @@
     .main-curate
         height: auto
         width: auto
-        width: 200px
-        top: 150px
+        max-width: 40%
+        top: 27%
         position: absolute
         display: block
+        padding: 0 10%
+        
         
         &:nth-of-type(1)
             right: 0
         
     .rightRox
         left: 0
+        margin-top: -2.5%
 
         
             
@@ -96,8 +98,9 @@
             .top
                 box-sizing: border-box
                 img
-                    margin-left: 0
-                    margin-right: 0
+                    margin-left: 4%
+                    margin-right: 4%
+                    max-width: 40%
             .bottom
                 img
                     margin-left: 0
@@ -138,6 +141,7 @@
         padding-left: 5%
         ul
             padding: 5% 0 
+            margin-top: 15px
             box-sizing: border-box
             height: 100% 
             width: $sectionWidth
@@ -202,7 +206,7 @@
             justify-content: space-between
             flex-wrap: wrap
             height: 20%
-            width: 50%
+            width: 60%
             position: absolute
             bottom: 0
             right: 0
@@ -235,8 +239,8 @@
                 img
                     height: aut0
                     width: auto
-                    max-width: 19%
-                    max-height: 70%
+                    max-width: 24%
+                    max-height: 90%
                     position: relative
                     display: block
                     margin: auto
@@ -275,26 +279,30 @@
             div
                 position: relative
                 box-sizing: border-box
-                width: $sectionWidth
+                width: 100%
+                padding: 10px 0 
                 @include center
                     
                 input
                     background-color: $navColor
                     border: $turquoise 1px solid
                     padding-left: 5px
-                    height: $bodySize
+                    height: $bodySize + 5
                     position: relative
-                    width: 100%
+                    width: 95%
                     color: $whiteDots
+                    bottom: -10px
+                    left: 0
+                    box-sizing: border-box
+
 
                 ty
                     text-align: left
                     padding-left: 5px
                     color: $turquoise
-                    height: $bodySize - 5
                     font-size: $bodySize - 5
                     font-family: $hThin
-                    padding-bottom: 10px
+                    padding-bottom: 0px
                     
                 .disabled
                     color: $dots
@@ -307,6 +315,8 @@
                 height: 100%
                 float: left
                 width: 60%
+                position: relative
+                top: -20px
                 
                 .fakebox
                     width: $bodySize * 1.2
@@ -395,8 +405,9 @@
 
             .bottom
                 position: absolute
-                right: 0
+                right: 30px
                 img
+                    max-width: 30%
                     margin-left: 0
                     margin-right: 0
                     padding: 0 10px
