@@ -1,6 +1,9 @@
 .opener {
   transition: 1s all ease-in-out 0s; }
 
+em {
+  font-style: italic; }
+
 body {
   display: flex;
   box-sizing: border-box;
@@ -58,7 +61,7 @@ h2 {
   font-family: "HelveticaThin"; }
 
 .main {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
