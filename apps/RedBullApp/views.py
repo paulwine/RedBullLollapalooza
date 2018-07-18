@@ -36,9 +36,9 @@ def form_input(request):
     
     
     send_mail(
-    'Thank you for partying with us!',
-    'RedBull',
-    'RedBullVillaRiad@gmail.com',
+    'Thank you for confirming! (Click to see invitation image)',
+    'RedBull Curates Chi',
+    'industry@redbullcurateschi.com',
     [email],
     fail_silently=False,
     html_message = message_html,
