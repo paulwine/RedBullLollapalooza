@@ -372,3 +372,20 @@ for (let each of circles) {
         sideTextOff(each);
     }
 }
+
+rsvpBox.onclick = function () {
+    for (let each of circles) {
+        if (each.getAttribute('position') === "5") {
+                triggerCircle(each);
+                toSection(each);
+            }
+        }
+    }
+document.getElementById('back-to-top').onclick = function(){
+    for(let each of circles){
+        if(each.getAttribute('position') === "1"){
+            triggerCircle(each);
+            toSection(each);
+        }
+    }
+}
