@@ -1,3 +1,25 @@
+#back-to-top {
+  background-color: #45bfa2;
+  font-size: 1.3rem;
+  position: absolute;
+  padding: 10px 20px;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: #151516;
+  border-radius: 5px; }
+
+#rsvp-top {
+  background-color: #6b1826;
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 5px;
+  color: #dbd7d8;
+  cursor: pointer; }
+
 .first {
   z-index: 20; }
   .first img {

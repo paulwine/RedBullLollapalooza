@@ -2,6 +2,7 @@ let navItems = document.querySelector('nav').getElementsByTagName('img');
 let sideText = document.getElementsByClassName('side-text');
 let arrows = document.getElementsByClassName('arrow');
 let arrowBottom = "40px"
+let rsvpBox = document.getElementById('rsvp-top');
 
 for (let each of navItems) {
     each.style.transform = "rotate(0deg)";
