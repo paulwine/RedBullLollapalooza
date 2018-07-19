@@ -1,7 +1,8 @@
 let navItems = document.querySelector('nav').getElementsByTagName('img');
 let sideText = document.getElementsByClassName('side-text');
 let arrows = document.getElementsByClassName('arrow');
-let arrowBottom = "-60px"
+let arrowBottom = "40px"
+let rsvpBox = document.getElementById('rsvp-top');
 
 for (let each of navItems) {
     each.style.transform = "rotate(0deg)";
@@ -13,11 +14,16 @@ function navAnimation(clicked, direction) {
     let position = clicked.getAttribute('position');
 
     for (let arrow of arrows){
-        arrow.style.bottom = "-30%";
+        arrow.style.bottom = "-200px";
         if(arrow.getAttribute('position') === position){
+            arrow.style.display = 'block';
             setTimeout(function(){
                 arrow.style.bottom = arrowBottom;
-            }, 300)
+            }, 500)
+        } else{
+            setTimeout(function(){
+            arrow.style.display = 'none';   
+            }, 500)
         }
     }
         for (let each of navItems) {
@@ -45,7 +51,7 @@ let movem = document.getElementsByClassName('first');
 for (let each of movem) {
     for (let child of each.children) {
         openers.push(child);
-        child.style.transform = "translateY(200px)";
+        child.style.transform = "translateY(0px)";
         child.style.opacity = "0"
         child.classList.add('opener');
     }

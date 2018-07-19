@@ -5,14 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedBull Curates</title>
-    <!-- <link rel="stylesheet" href="../static/css/default.css">
+<!--
+    <link rel="stylesheet" href="../static/css/default.css">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/nav.css">
     <link rel="stylesheet" href="../static/css/specific.css">
-    <link rel="stylesheet" href="../static/css/mobile.css"> -->
+    <link rel="stylesheet" href="../static/css/mobile.css">
+-->
 
-    <!--    {% load static %}-->
+        {% load static %}
     <link rel="stylesheet" href="{% static 'css/default.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
@@ -150,15 +152,15 @@
             </div>
 
             <div position=1.5 class="module sixth">
-                <img class='main-curate' src="../static/vectors/Logos/Roxwell%201.svg" alt="">
+                <img class='main-curate' src="../static/vectors/Logos/RoxwellPerfLogo.svg" alt="">
                 <div class="flex-box">
 
                     <div class="top">
 
-                        <img src="../static/vectors/Logos/Bam.svg" alt="">
                         <img src="../static/vectors/Logos/ParadigmLandingLogo.svg" alt="">
                         <img src="../static/vectors/Logos/PaxahauLandingLogo.svg" alt="">
                         <img src="../static/vectors/Logos/1833LandingLogo.svg" alt="">
+                        <img src="../static/vectors/Logos/ColdChillenLandingLogo.svg" alt="">
                     </div>
 
                     <div class="bottom">
@@ -166,7 +168,7 @@
                         <img src="../static/vectors/Logos/WheatleyLogoLanding.svg" alt="">
                         <img src="../static/vectors/Logos/FewLandingLogo.svg" alt="">
                         <img src="../static/vectors/Logos/CorazonLandingLogo.svg" alt="">
-                        <img class src="../static/vectors/Logos/HendricksLandingLogo.svg" alt="">
+
 
                     </div>
                 </div>
@@ -186,22 +188,25 @@
             <div position=1 class='view module edge-top first start'>
                 <img src="../static/vectors/CURATES.svg" alt="">
                 <h1>RIAD</h1>
+                
+                <h2 position = 5 id = "rsvp-top">RSVP</h2>
 
 
             </div>
             <div position=1.5 class="module sixth">
-                <img class="main-curate rightRox" src="../static/vectors/Logos/Roxwell%202_1.svg" alt="">
+                <img class="main-curate rightRox" src="../static/vectors/Logos/Bam.svg" alt="">
                 <div class="flex-box">
 
                     <div class="top">
 
-                        <img src="../static/vectors/Logos/ColdChillenLandingLogo.svg" alt="">
+
                         <img src="../static/vectors/Logos/GreyGhostLandingLogo.svg" alt="">
                         <img src="../static/vectors/Logos/EntenteLandingLogo.svg" alt="">
 
                     </div>
 
                     <div class="bottom">
+                        <img class src="../static/vectors/Logos/HendricksLandingLogo.svg" alt="">
 
                         <img src="../static/vectors/Logos/StolenRumLandingLogo.svg" alt="">
 
@@ -215,7 +220,7 @@
             <div position=2 class='module second'>
                 <div class='lax'>
                     <h2>VILLA RIAD</h2>
-                    <p><em>Pronounced (vil-uh) (ree-ahd). </em>Red Bull Curates: Villa Riad is a fully catered, ​invite-only​, industry event. <br><br> In the true spirit of summer, Villa Riad ​looks to deliver an elevated escape fit for our special invited industry guests' high standards​. We look to transport guests to a lavish lush oasis getaway in the middle of the city. Plan to be whisked a world away from the Chicago metropolis​. Villa Riad will be a feast for the senses of all partygoers</p>
+                    <p><em>Pronounced (vil-uh) (ree-ahd). </em><br>Red Bull Curates: Villa Riad is a fully catered, ​invite-only​, industry event. <br><br> In the true spirit of summer, Villa Riad ​looks to deliver an elevated escape fit for our special invited industry guests' high standards​. We look to transport guests to a lavish lush oasis getaway in the middle of the city. Plan to be whisked a world away from the Chicago metropolis​. Villa Riad will be a feast for the senses of all partygoers</p>
                 </div>
                 <div class='lax'>
                     <br><br><br>
@@ -279,7 +284,7 @@
 
             <div position=5 class='module edge-bottom fifth'>
                 <form action="/form_input" method="POST" class="lax">
-                    {% csrf_token %}
+                                        {% csrf_token %}
                     <div class=''>
                         <ty>First Name</ty><input name="first_name" type="text"></div>
                     <div class=''>
@@ -287,12 +292,12 @@
                     <div class=''>
                         <ty>Email</ty><input name="email" type="text"></div>
                     <div class=''>
-                        <ty>Cell Phone</ty><input name ="phone"type="text"></div>
+                        <ty>Cell Phone</ty><input name="phone" type="text"></div>
                     <div class="">
                         <ty>Industry Affiliation</ty><input name="affiliation" type="text">
                     </div>
                     <div class="">
-                        <ty>Who extended your invitation?</ty><input name="referall"type="text">
+                        <ty>Who extended your invitation?</ty><input name="referall" type="text">
                     </div>
                     <div class=''>
                         <ty>Do you have a wristband?</ty>
@@ -323,6 +328,7 @@
                     <br>
                     <p>Please make sure to list your affiliation on the RSVP form.​ ​Guests should have a wristband invite and must RSVP to gain access. Please make sure to include the invite number located on your invite wristband.</p>
                 </div>
+                <h2 id="back-to-top">Back to top</h2>
 
             </div>
         </div>
@@ -345,6 +351,29 @@
                 <img src="../static/vectors/CURATES.svg" alt=""></div>
             <h1>VILLA RIAD</h1>
         </div>
+        
+        <div class="mobile-section curators">
+            <img class="big" src="../static/vectors/Logos/RoxwellPerfLogo.svg" alt="">
+            <img class="big" src="../static/vectors/Logos/Bam.svg" alt="">
+            
+            <div class="flex-box top">
+                       <img src="../static/vectors/Logos/ParadigmLandingLogo.svg" alt="">
+                       <img src="../static/vectors/Logos/PaxahauLandingLogo.svg" alt="">
+                       <img src="../static/vectors/Logos/1833LandingLogo.svg" alt="">
+                       <img src="../static/vectors/Logos/ColdChillenLandingLogo.svg" alt="">
+                        <img src="../static/vectors/Logos/GreyGhostLandingLogo.svg" alt="">
+                        <img src="../static/vectors/Logos/EntenteLandingLogo.svg" alt="">
+            </div>
+            <div class="flex-box bottom">
+                <img src="../static/vectors/Logos/WheatleyLogoLanding.svg" alt="">
+                <img src="../static/vectors/Logos/FewLandingLogo.svg" alt="">
+                <img src="../static/vectors/Logos/CorazonLandingLogo.svg" alt="">
+                <img src="../static/vectors/Logos/HendricksLandingLogo.svg" alt="">
+                <img src="../static/vectors/Logos/StolenRumLandingLogo.svg" alt="">
+                <img src="../static/vectors/Logos/LaMarcaLogoLanding.svg" alt="">
+                <img src="../static/vectors/Logos/OldStyleLandingLogo.svg" alt="">
+            </div>
+        </div>
 
         <div class="mobile-section www">
             <div class="mobile-header">
@@ -357,7 +386,7 @@
             <div class="mobile-body">
                 <div>
                     <h3>VILLA RIAD</h3>
-                    <p>Pronounced (vil-uh) (ree-ahd). Red Bull Curates: Villa Riad is a fully catered, ​invite-only​, industry event.
+                    <p><em>Pronounced (vil-uh) (ree-ahd).</em> <br>Red Bull Curates: Villa Riad is a fully catered, ​invite-only​, industry event.
 
                         <br><br> In the true spirit of summer, Villa Riad ​looks to deliver an elevated escape fit for our special invited industry guests' high standards​. We look to transport guests to a lavish lush oasis getaway in the middle of the city. Plan to be whisked a world away from the Chicago metropolis​. Villa Riad will be a feast for the senses of all partygoers</p>
                 </div>
@@ -454,7 +483,7 @@
             </div>
             <div class="mobile-body fifth">
                 <form action="/form_input" method="POST" class="lax">
-                    {% csrf_token %}
+                                        {% csrf_token %}
                     <div>
                         <p>First Name</p><input name="first_name" type="text"></div>
                     <div>
@@ -462,7 +491,7 @@
                     <div class=''>
                         <p>Email</p><input name="email" type="text"></div>
                     <div class=''>
-                        <p>Cell Phone</p><input name="phone"type="text"></div>
+                        <p>Cell Phone</p><input name="phone" type="text"></div>
                     <div class="">
                         <p>Industry Affiliation</p><input name="affiliation" type="text">
                     </div>
@@ -490,7 +519,7 @@
                     </div>
                     <div class="long">
                         <p class='invitation-text'>Invitation number</p><input name="invitation" type="text" class='invitation'></div>
-                    <div class='submit'><button type='submit' name='button'>SUBMIT</button></div>
+                    <div class='submit'><button type='submit' name='button' >SUBMIT</button></div>
                 </form>
 
                 <div class="subtext">

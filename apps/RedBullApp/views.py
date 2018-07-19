@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import threading
 from django.shortcuts import render, redirect
-from .models import User
-from django.core.mail import send_mail
+from .models import User, EmailThread
+from django.core.mail import send_mail, EmailMessage
+
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
  
@@ -27,22 +29,26 @@ def form_input(request):
     if 'affiliation' in request.POST:
         affiliation = request.POST['affiliation']
     wristband = False
-    message_html = render_to_string('waitlist_email.html')
+    html_content = render_to_string('waitlist_email.html')
     if 'yes' in request.POST:
         wristband = True
         message_html = render_to_string('email.html')
     print(wristband)
     User.objects.create(first_name=first_name, last_name=last_name, phone=phone,email=email, wristband=wristband, affiliation=affiliation, referall=referall,invitation=invitation)
     
-    
-    send_mail(
-    'Thank you for partying with us!',
-    'RedBull',
-    'RedBullVillaRiad@gmail.com',
-    [email],
-    fail_silently=False,
-    html_message = message_html,
-)
+    subject = 'Thank you for confirming! (Click to see invitation image)'
+    recipient_list = [email]
+    sender = 'industry@redbullcurateschi.com'
+    EmailThread(subject, html_content, recipient_list, sender).start()
+    # EmailThread(subject, html_content, recipient_list, sender).run()
+#     send_mail(
+#     'Thank you for confirming! (Click to see invitation image)',
+#     'RedBull Curates Chi',
+#     'industry@redbullcurateschi.com',
+#     [email],
+#     fail_silently=False,
+#     html_message = message_html,
+# )
     return redirect("/confirmation")
 
 def display_users(request):

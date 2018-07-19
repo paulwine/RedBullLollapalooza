@@ -11,7 +11,7 @@
 .mobile-section {
   position: static;
   min-height: 100%;
-  min-width: 100%;
+  width: 100%;
   padding-bottom: 20%;
   box-sizing: border-box;
   background-image: url("../img/Background.png"); }
@@ -44,6 +44,44 @@
     color: #e29e33;
     width: 100%;
     text-align: center; }
+
+.curators .big {
+  position: absolute;
+  height: auto;
+  width: auto;
+  max-width: 40%;
+  left: 10%;
+  max-height: 100%; }
+  .curators .big:nth-of-type(1) {
+    margin-top: 2%; }
+  .curators .big:nth-of-type(2) {
+    left: 55%; }
+.curators .flex-box {
+  position: relative;
+  top: 200px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10%;
+  flex-wrap: wrap; }
+.curators .top img {
+  max-width: 35%;
+  max-height: 70px;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
+.curators .bottom {
+  margin-top: 40px; }
+  .curators .bottom img {
+    padding: 0 5px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    max-width: 20%; }
 
 .mobile-header {
   height: 100px;
@@ -289,7 +327,8 @@
 .RSVP .submit {
   position: relative;
   top: 30px;
-  grid-column: 1/span 2; }
+  grid-column: 1/span 2;
+  box-sizing: border-box; }
   .RSVP .submit button {
     background-color: #45bfa2;
     color: #151516;
@@ -300,7 +339,9 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
     top: 21px;
     cursor: pointer; }
 .RSVP .subtext {

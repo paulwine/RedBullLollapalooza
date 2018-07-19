@@ -14,7 +14,7 @@
 .mobile-section
     position: static        
     min-height: 100%
-    min-width: 100%
+    width: 100%
     padding-bottom: 20%
     box-sizing: border-box
     background-image: url("../img/Background.png")
@@ -52,6 +52,53 @@
         width: 100%
         text-align: center
      
+        
+.curators
+    .big
+        position: absolute
+        height: auto
+        width: auto
+        max-width: 40%
+        left: 10%
+        max-height: 100%
+        
+        &:nth-of-type(1)
+            margin-top: 2%
+        
+        &:nth-of-type(2)
+            left: 55%
+        
+    .flex-box
+        position: relative
+        top: 200px
+        display: flex
+        justify-content: space-between
+        box-sizing: border-box
+        padding: 0 10%
+        flex-wrap: wrap
+        
+    .top        
+        img
+            max-width: 35%
+            max-height: 70px
+            display: block 
+            position: relative
+            margin-left: auto
+            margin-right: auto
+            
+    .bottom
+        margin-top: 40px
+        img
+            padding: 0 5px
+            position: relative
+            display: block
+            margin-left: auto
+            margin-right: auto
+            height: auto
+            width: auto
+            max-width: 20%
+            
+            
 .mobile-header
     height: $headerHeight
     width: 100%
@@ -72,7 +119,7 @@
         position: relative
         display: block
         top: 35%
-        
+      
 .www
     .mobile-header
         background-color: $red
@@ -324,6 +371,7 @@
         position: relative
         top: 30px
         grid-column: 1 /span 2
+        box-sizing: border-box
 
         button
             background-color: $turquoise
@@ -332,7 +380,9 @@
             border: none
             font-size: $bodySize * 1.5
             @include center
-            width: 50%
+            padding-left: 10px
+            padding-right: 10px
+            box-sizing: border-box
             top: $bodySize
             cursor: pointer
             
@@ -348,5 +398,5 @@
         p
             color: $grayColor
                     
-                    
+                
                     
