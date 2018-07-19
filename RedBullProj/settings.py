@@ -25,14 +25,16 @@ SECRET_KEY = '^@k_nbv8z5e^ey_o45oufqh8rte3sl5ic!4d@39z$hek00j&u9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ['18.221.194.106', 'redbullcurateschi.com', 'www.redbullcurateschi.com']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['18.221.194.106', 'redbullcurateschi.com', 'www.redbullcurateschi.com']
+#ALLOWED_HOSTS = []
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.office365.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'RedBullVillaRiad@gmail.com'
-EMAIL_HOST_PASSWORD = 'secretkey15'
+EMAIL_HOST_USER = 'industry@redbullcurateschi.com'
+EMAIL_HOST_PASSWORD = 'r3db00l!'
+
+
 
 
 # Application definition
