@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^@k_nbv8z5e^ey_o45oufqh8rte3sl5ic!4d@39z$hek00j&u9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 <<<<<<< HEAD
 ALLOWED_HOSTS = ['13.59.140.228', 'redbullcurateschi.com', 'www.redbullcurateschi.com']
@@ -34,10 +34,11 @@ ALLOWED_HOSTS = ['18.221.194.106', 'redbullcurateschi.com', 'www.redbullcuratesc
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.office365.com'
-# EMAIL_PORT = 587
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'industry@redbullcurateschi.com'
 EMAIL_HOST_PASSWORD = 'r3db00l!'
+
+
 
 
 # Application definition
