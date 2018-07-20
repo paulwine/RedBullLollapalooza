@@ -34,7 +34,8 @@
     font-family: "HelveticaUltraLight";
     margin-right: 40px;
     margin-left: 40px;
-    letter-spacing: 20px; }
+    letter-spacing: 20px;
+    font-size: 7rem; }
 
 .sixth .main-curate {
   height: auto;
@@ -229,7 +230,7 @@
     color: #6d6d6d; }
   #right .fifth div.subtext {
     position: absolute;
-    height: 40%;
+    height: 20%;
     width: 60%;
     display: block;
     left: 0;
@@ -237,7 +238,8 @@
     margin-left: auto;
     margin-right: auto;
     top: auto;
-    bottom: 0px; }
+    bottom: 80px;
+    text-align: center; }
   #right .fifth form {
     position: relative;
     width: 85%;
@@ -248,7 +250,8 @@
     margin-left: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; }
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    z-index: 800; }
     #right .fifth form div {
       position: relative;
       box-sizing: border-box;
@@ -262,7 +265,7 @@
         background-color: #151516;
         border: #45bfa2 1px solid;
         padding-left: 5px;
-        height: 26px;
+        height: 1.63rem;
         position: relative;
         width: 95%;
         color: #dbd7d8;
@@ -273,7 +276,7 @@
         text-align: left;
         padding-left: 5px;
         color: #45bfa2;
-        font-size: 16px;
+        font-size: -3.8rem;
         font-family: "HelveticaThin";
         padding-bottom: 0px; }
       #right .fifth form div .disabled {
@@ -289,10 +292,10 @@
       position: relative;
       top: -20px; }
       #right .fifth form .checkboxes .fakebox {
-        width: 25.2px;
-        height: 25.2px;
+        width: 1.44rem;
+        height: 1.44rem;
         position: relative;
-        top: 21px;
+        top: 1.2rem;
         display: inline-block;
         background-color: #151516;
         border: solid 1px #45bfa2;
@@ -300,9 +303,9 @@
         cursor: pointer;
         overflow: hidden; }
         #right .fifth form .checkboxes .fakebox .check {
-          width: 42px;
-          height: 42px;
-          border-radius: 10.5px;
+          width: 2.4rem;
+          height: 2.4rem;
+          border-radius: 0.6rem;
           background-color: #dbd7d8;
           display: block;
           position: absolute;
@@ -322,11 +325,11 @@
       #right .fifth form .checkboxes span {
         padding-left: 5px;
         color: #45bfa2;
-        font-size: 21px;
+        font-size: 1.2rem;
         font-family: "HelveticaLight";
         position: relative;
-        top: 26px;
-        height: 21px;
+        top: 1.4rem;
+        height: 1.2rem;
         box-sizing: border-box; }
   #right .fifth .submit {
     position: relative;
@@ -337,13 +340,13 @@
       color: #151516;
       font-family: "HelveticaThin";
       border: none;
-      font-size: 31.5px;
+      font-size: 1.8rem;
       position: relative;
       display: block;
       margin-right: auto;
       margin-left: auto;
       width: 50%;
-      top: 21px;
+      top: 1.2rem;
       cursor: pointer; }
 
 #left .first .main-curate {

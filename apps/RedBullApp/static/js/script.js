@@ -292,6 +292,7 @@ function sideTextOff(circle) {
 }
 
 
+
 function parallaxImg(item, direction) {
     if (!(item === null) && !(item === undefined)) {
         if (direction === "up") {
