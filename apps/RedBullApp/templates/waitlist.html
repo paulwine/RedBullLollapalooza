@@ -26,11 +26,16 @@
     </style>
 <body>
     <h1>Waitlist</h1>
+    <a href "/display_users">Users w/ wristbands</a>
     <form action ="/waitlist_filtered" method="post">
         {% csrf_token %}
         <p>Search By Last Name:  <input type="text" name="last_name"></p>
         <p>Search By Invitation Number:  <input type="text" name="invitation"></p>
         <input type="submit">
+    </form>
+    <form action ='/waitlist' method ="post">
+        {% csrf_token %}
+        <input type="submit" value ="Display full waitlist">
     </form>
     {% for user in users %}
     <hr>
