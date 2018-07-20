@@ -1,5 +1,6 @@
 body {
-  background-image: url("../img/Background.png"); }
+  background-image: url("../img/Background.png");
+  background-position: center; }
   body h1 {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -13,6 +14,18 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto; }
+  body h3 {
+    color: #dbd7d8;
+    font-size: 1.5rem;
+    font-family: "HelveticaThin";
+    width: 50%;
+    top: 25%;
+    position: relative;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
   body a {
     font-size: 1.5rem;
     position: relative;

@@ -14,7 +14,8 @@
   width: 100%;
   padding-bottom: 20%;
   box-sizing: border-box;
-  background-image: url("../img/Background.png"); }
+  background-image: url("../img/Background.png");
+  background-position: center; }
   .mobile-section img {
     height: auto;
     width: auto;
@@ -45,43 +46,46 @@
     width: 100%;
     text-align: center; }
 
-.curators .big {
-  position: absolute;
-  height: auto;
-  width: auto;
-  max-width: 40%;
-  left: 10%;
-  max-height: 100%; }
-  .curators .big:nth-of-type(1) {
-    margin-top: 2%; }
-  .curators .big:nth-of-type(2) {
-    left: 55%; }
-.curators .flex-box {
-  position: relative;
-  top: 200px;
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 0 10%;
-  flex-wrap: wrap; }
-.curators .top img {
-  max-width: 35%;
-  max-height: 70px;
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto; }
-.curators .bottom {
-  margin-top: 40px; }
-  .curators .bottom img {
-    padding: 0 5px;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.curators {
+  padding-bottom: 60%; }
+  .curators .big {
+    position: absolute;
     height: auto;
     width: auto;
-    max-width: 20%; }
+    max-width: 40%;
+    left: 10%;
+    max-height: 100%; }
+    .curators .big:nth-of-type(1) {
+      margin-top: 2%; }
+    .curators .big:nth-of-type(2) {
+      left: 55%; }
+  .curators .flex-box {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 10%;
+    flex-wrap: wrap; }
+  .curators .top img {
+    max-width: 35%;
+    max-height: 100px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1% 2%; }
+  .curators .bottom {
+    margin-top: 40px; }
+    .curators .bottom img {
+      padding: 0 5px;
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      width: auto;
+      max-width: 20%; }
 
 .mobile-header {
   height: 100px;
