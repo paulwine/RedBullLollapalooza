@@ -13,5 +13,20 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto; }
+  body a {
+    font-size: 1.5rem;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    box-sizing: border-box;
+    top: 30%;
+    background-color: #6b1826;
+    color: #dbd7d8;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: "HelveticaThin";
+    border-radius: 5px; }
 
 /*# sourceMappingURL=confirm.css.map */

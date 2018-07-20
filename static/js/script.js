@@ -292,6 +292,7 @@ function sideTextOff(circle) {
 }
 
 
+
 function parallaxImg(item, direction) {
     if (!(item === null) && !(item === undefined)) {
         if (direction === "up") {
@@ -370,5 +371,22 @@ for (let each of circles) {
     }
     each.onmouseleave = function () {
         sideTextOff(each);
+    }
+}
+
+rsvpBox.onclick = function () {
+    for (let each of circles) {
+        if (each.getAttribute('position') === "5") {
+                triggerCircle(each);
+                toSection(each);
+            }
+        }
+    }
+document.getElementById('back-to-top').onclick = function(){
+    for(let each of circles){
+        if(each.getAttribute('position') === "1"){
+            triggerCircle(each);
+            toSection(each);
+        }
     }
 }

@@ -10,7 +10,7 @@ let svgs = document.getElementsByClassName('svg');
 
 let fontItems = new Array;
 let svgItems = new Array;
-
+let main = document.querySelector('.main');
 let background = document.querySelector('.background');
 
 console.log(background);
@@ -105,4 +105,10 @@ window.onresize = function () {
     for (let each of svgItems) {
         resizeSVG(each);
     }
+
+}
+
+for(let each of sideText){
+    each.style.left = "-800px";
+    
 }
