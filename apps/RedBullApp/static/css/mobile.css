@@ -65,16 +65,16 @@
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
-    padding: 0 10%;
+    padding: 0 2%;
     flex-wrap: wrap; }
   .curators .top img {
     max-width: 35%;
-    max-height: 100px;
+    max-height: 60px;
     display: block;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin: 1% 2%; }
+    margin: 1% 4%; }
   .curators .bottom {
     margin-top: 40px; }
     .curators .bottom img {
@@ -85,7 +85,8 @@
       margin-right: auto;
       height: auto;
       width: auto;
-      max-width: 20%; }
+      max-width: 20%;
+      max-height: 50px; }
 
 .mobile-header {
   height: 100px;
