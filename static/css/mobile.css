@@ -47,7 +47,7 @@
     text-align: center; }
 
 .curators {
-  padding-bottom: 60%; }
+  padding-bottom: 90%; }
   .curators .big {
     position: absolute;
     height: auto;
@@ -61,7 +61,7 @@
       left: 55%; }
   .curators .flex-box {
     position: relative;
-    top: 200px;
+    top: 150px;
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
