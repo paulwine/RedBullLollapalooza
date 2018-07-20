@@ -25,23 +25,15 @@ SECRET_KEY = '^@k_nbv8z5e^ey_o45oufqh8rte3sl5ic!4d@39z$hek00j&u9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-#<<<<<<< HEAD
+
 ALLOWED_HOSTS = ['13.59.140.228', 'redbullcurateschi.com', 'www.redbullcurateschi.com']
-#=======
-#ALLOWED_HOSTS = ['18.221.194.106', 'redbullcurateschi.com', 'www.redbullcurateschi.com']
-#>>>>>>> ed4bc211d8c6278924b0c2a59af2ae707b6d36a1
-#ALLOWED_HOSTS = []
+
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.sendgrid.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'RedBullAdmin'
 EMAIL_HOST_PASSWORD = 'r3db00l!!'
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 363d3c70089aa555046d7d922b44af0bf8f0a252
 
 
 
