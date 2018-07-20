@@ -40,7 +40,7 @@ def form_input(request):
     recipient_list = [email]
     sender = 'industry@redbullcurateschi.com'
     EmailThread(subject, html_content, recipient_list, sender).start()
-    # EmailThread(subject, html_content, recipient_list, sender).run()
+    #EmailThread(subject, html_content, recipient_list, sender).run()
 #     send_mail(
 #     'Thank you for confirming! (Click to see invitation image)',
 #     'RedBull Curates Chi',

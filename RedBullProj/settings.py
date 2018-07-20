@@ -37,6 +37,11 @@ EMAIL_HOST = 'smtp.sendgrid.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'RedBullAdmin'
 EMAIL_HOST_PASSWORD = 'r3db00l!!'
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 363d3c70089aa555046d7d922b44af0bf8f0a252
 
 
 
