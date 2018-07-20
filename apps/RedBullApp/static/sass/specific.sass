@@ -8,7 +8,7 @@
     right: 15px
     cursor: pointer
     color: $navColor
-    border-radius: 5px
+    border-radius: 0px
 
 #rsvp-top
     background-color: $maroon
@@ -17,7 +17,7 @@
     font-size: 1.3rem
     bottom: 15px
     right: 15px
-    border-radius: 5px
+    border-radius: 0px
     color: $whiteDots
     cursor: pointer
 .first
@@ -26,6 +26,7 @@
     img
         
         height: 7%
+        max-width: 70%
         display: block
         position: relative
         top: 200px
@@ -46,8 +47,8 @@
     .main-curate
         height: auto
         width: auto
-        max-width: 40%
-        top: 27%
+        max-width: 30%
+        top: 15%
         position: absolute
         display: block
         padding: 0 10%
@@ -63,33 +64,63 @@
         
             
     div.flex-box
-        height: 25%
-        width: 70%
+        height: 50%
+        width: 80%
         display: flex
         flex-wrap: wrap
         position: absolute
         box-sizing: border-box
         top: auto
-        bottom: 20%
+        top: 40%
         left: 0
         right: 0
-        margin-right: 3%
-        margin-left: 3%
 
+    
+        div
+            position: absolute
+            box-sizing: border-box 
         div.top
-            width: 100%
+            width: 70%
             display: flex
-            height: 50%
-            justify-content: space-between
-
+            height: 33%
+            justify-content: space-around
+            
+            img
+                max-width: 50%
+                position: relative
+                margin-left: auto
+                margin-right: auto
+                display: block
+        .left
+            right: 0
+        .right
+        div.center
+            width: 60%
+            height: 33%
+            display: flex
+            top: 33%
+            justify-content: space-around
+            
+            img
+                max-width: 50%
+                margin: 0 5%
+        div.c-left
+            right: 10%
+        div.c-right
+            left: 10%
+            
 
         div.bottom
+            position: relative
             width: 90%
             display: flex
-            height: 40%
+            height: 33%
             position: relative
-            top: 50%
-            justify-content: space-between
+            top: 66%
+            justify-content: space-around
+            img
+                max-width: 20%
+                max-height: 50%
 
 
         img
@@ -123,6 +154,7 @@
                     margin-right: 4%
                     max-width: 40%
             .bottom
+                position: absolute
                 img
                     margin-left: 0
                     margin-right: 0
@@ -162,7 +194,7 @@
         padding-left: 5%
         ul
             padding: 5% 0 
-            margin-top: 15px
+            margin-top: 60px
             box-sizing: border-box
             height: 100% 
             width: $sectionWidth
@@ -175,7 +207,7 @@
                 width: 100%
                 display: block
                 height: 95%
-                margin: 1% 0
+                margin: 3% 0
                 box-sizing: default
                 text-align: center
             
@@ -287,7 +319,7 @@
             margin-left: auto
             margin-right: auto
             top: auto
-            bottom: 80px
+            bottom: 70px 
             text-align: center
                 
             
@@ -300,7 +332,7 @@
             display: grid
             grid-template-columns: 1fr 1fr
             grid-template-rows: 1fr 1fr 1fr 1fr
-            z-index: 800
+            z-index: 5
             
             div
                 position: relative
@@ -391,7 +423,7 @@
                     
         .submit
             position: relative
-            top: 9%
+            top: 5%
             grid-column: 1 /span 2
             
             button

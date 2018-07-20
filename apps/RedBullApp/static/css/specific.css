@@ -7,7 +7,7 @@
   right: 15px;
   cursor: pointer;
   color: #151516;
-  border-radius: 5px; }
+  border-radius: 0px; }
 
 #rsvp-top {
   background-color: #6b1826;
@@ -16,7 +16,7 @@
   font-size: 1.3rem;
   bottom: 15px;
   right: 15px;
-  border-radius: 5px;
+  border-radius: 0px;
   color: #dbd7d8;
   cursor: pointer; }
 
@@ -24,6 +24,7 @@
   z-index: 20; }
   .first img {
     height: 7%;
+    max-width: 70%;
     display: block;
     position: relative;
     top: 200px; }
@@ -40,8 +41,8 @@
 .sixth .main-curate {
   height: auto;
   width: auto;
-  max-width: 40%;
-  top: 27%;
+  max-width: 30%;
+  top: 15%;
   position: absolute;
   display: block;
   padding: 0 10%; }
@@ -51,30 +52,56 @@
   left: 0;
   margin-top: -2.5%; }
 .sixth div.flex-box {
-  height: 25%;
-  width: 70%;
+  height: 50%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
   box-sizing: border-box;
   top: auto;
-  bottom: 20%;
+  top: 40%;
   left: 0;
-  right: 0;
-  margin-right: 3%;
-  margin-left: 3%; }
+  right: 0; }
+  .sixth div.flex-box div {
+    position: absolute;
+    box-sizing: border-box; }
   .sixth div.flex-box div.top {
-    width: 100%;
+    width: 70%;
     display: flex;
-    height: 50%;
-    justify-content: space-between; }
+    height: 33%;
+    justify-content: space-around; }
+    .sixth div.flex-box div.top img {
+      max-width: 50%;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      display: block; }
+  .sixth div.flex-box .left {
+    right: 0; }
+  .sixth div.flex-box div.center {
+    width: 60%;
+    height: 33%;
+    display: flex;
+    top: 33%;
+    justify-content: space-around; }
+    .sixth div.flex-box div.center img {
+      max-width: 50%;
+      margin: 0 5%; }
+  .sixth div.flex-box div.c-left {
+    right: 10%; }
+  .sixth div.flex-box div.c-right {
+    left: 10%; }
   .sixth div.flex-box div.bottom {
+    position: relative;
     width: 90%;
     display: flex;
-    height: 40%;
+    height: 33%;
     position: relative;
-    top: 50%;
-    justify-content: space-between; }
+    top: 66%;
+    justify-content: space-around; }
+    .sixth div.flex-box div.bottom img {
+      max-width: 20%;
+      max-height: 50%; }
   .sixth div.flex-box img {
     display: block;
     position: relative;
@@ -96,9 +123,11 @@
       margin-left: 4%;
       margin-right: 4%;
       max-width: 40%; }
-  #right .sixth .flex-box .bottom img {
-    margin-left: 0;
-    margin-right: 0; }
+  #right .sixth .flex-box .bottom {
+    position: absolute; }
+    #right .sixth .flex-box .bottom img {
+      margin-left: 0;
+      margin-right: 0; }
 #right .second {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -128,7 +157,7 @@
   padding-left: 5%; }
   #right .third ul {
     padding: 5% 0;
-    margin-top: 15px;
+    margin-top: 60px;
     box-sizing: border-box;
     height: 100%;
     width: 75%;
@@ -143,7 +172,7 @@
       width: 100%;
       display: block;
       height: 95%;
-      margin: 1% 0;
+      margin: 3% 0;
       box-sizing: default;
       text-align: center; }
       #right .third ul li svg {
@@ -238,7 +267,7 @@
     margin-left: auto;
     margin-right: auto;
     top: auto;
-    bottom: 80px;
+    bottom: 70px;
     text-align: center; }
   #right .fifth form {
     position: relative;
@@ -251,7 +280,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    z-index: 800; }
+    z-index: 5; }
     #right .fifth form div {
       position: relative;
       box-sizing: border-box;
@@ -333,7 +362,7 @@
         box-sizing: border-box; }
   #right .fifth .submit {
     position: relative;
-    top: 9%;
+    top: 5%;
     grid-column: 1/span 2; }
     #right .fifth .submit button {
       background-color: #45bfa2;
