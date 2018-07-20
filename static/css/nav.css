@@ -30,14 +30,14 @@ nav {
       color: #dbd7d8;
       display: inline-block;
       position: relative;
-      left: 55px;
+      left: 10px;
       z-index: 0;
       width: auto;
       height: auto;
       white-space: nowrap;
-      top: 3.9px;
+      top: 0.2228571429rem;
       font-family: "HelveticaThin";
-      font-size: 27.3px;
+      font-size: 1.56rem;
       padding: 3px 5px;
       box-sizing: border-box;
       overflow: hidden;

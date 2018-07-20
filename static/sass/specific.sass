@@ -1,11 +1,32 @@
 @import 'styles'
+#back-to-top
+    background-color: $turquoise
+    font-size: 1.3rem
+    position: absolute
+    padding: 10px 20px
+    bottom: 15px
+    right: 15px
+    cursor: pointer
+    color: $navColor
+    border-radius: 0px
 
+#rsvp-top
+    background-color: $maroon
+    position: absolute
+    padding: 10px 20px
+    font-size: 1.3rem
+    bottom: 15px
+    right: 15px
+    border-radius: 0px
+    color: $whiteDots
+    cursor: pointer
 .first
     z-index: 20
     
     img
         
         height: 7%
+        max-width: 70%
         display: block
         position: relative
         top: 200px
@@ -15,10 +36,10 @@
         position: relative
         color: $letterOrange
         font-family: $hUltraLight
-        font-size: 110px
         margin-right: $landingMargin
         margin-left: $landingMargin
         letter-spacing: 20px
+        font-size: 7rem
         
 
  
@@ -26,47 +47,80 @@
     .main-curate
         height: auto
         width: auto
-        width: 200px
-        top: 150px
+        max-width: 30%
+        top: 15%
         position: absolute
         display: block
+        padding: 0 10%
+        
         
         &:nth-of-type(1)
             right: 0
         
     .rightRox
         left: 0
+        margin-top: -2.5%
 
         
             
     div.flex-box
-        height: 25%
-        width: 70%
+        height: 50%
+        width: 80%
         display: flex
         flex-wrap: wrap
         position: absolute
         box-sizing: border-box
         top: auto
-        bottom: 20%
+        top: 40%
         left: 0
         right: 0
-        margin-right: 3%
-        margin-left: 3%
 
+    
+        div
+            position: absolute
+            box-sizing: border-box 
         div.top
-            width: 100%
+            width: 70%
             display: flex
-            height: 50%
-            justify-content: space-between
-
+            height: 33%
+            justify-content: space-around
+            
+            img
+                max-width: 50%
+                position: relative
+                margin-left: auto
+                margin-right: auto
+                display: block
+        .left
+            right: 0
+        .right
+        div.center
+            width: 60%
+            height: 33%
+            display: flex
+            top: 33%
+            justify-content: space-around
+            
+            img
+                max-width: 50%
+                margin: 0 5%
+        div.c-left
+            right: 10%
+        div.c-right
+            left: 10%
+            
 
         div.bottom
+            position: relative
             width: 90%
             display: flex
-            height: 40%
+            height: 33%
             position: relative
-            top: 50%
-            justify-content: space-between
+            top: 66%
+            justify-content: space-around
+            img
+                max-width: 20%
+                max-height: 50%
 
 
         img
@@ -96,9 +150,11 @@
             .top
                 box-sizing: border-box
                 img
-                    margin-left: 0
-                    margin-right: 0
+                    margin-left: 4%
+                    margin-right: 4%
+                    max-width: 40%
             .bottom
+                position: absolute
                 img
                     margin-left: 0
                     margin-right: 0
@@ -138,6 +194,7 @@
         padding-left: 5%
         ul
             padding: 5% 0 
+            margin-top: 60px
             box-sizing: border-box
             height: 100% 
             width: $sectionWidth
@@ -150,7 +207,7 @@
                 width: 100%
                 display: block
                 height: 95%
-                margin: 1% 0
+                margin: 3% 0
                 box-sizing: default
                 text-align: center
             
@@ -202,7 +259,7 @@
             justify-content: space-between
             flex-wrap: wrap
             height: 20%
-            width: 50%
+            width: 60%
             position: absolute
             bottom: 0
             right: 0
@@ -235,8 +292,8 @@
                 img
                     height: aut0
                     width: auto
-                    max-width: 19%
-                    max-height: 70%
+                    max-width: 24%
+                    max-height: 90%
                     position: relative
                     display: block
                     margin: auto
@@ -249,11 +306,12 @@
         box-sizing: border-box
         p
             color: $grayColor
+
         
         
         div.subtext
             position: absolute
-            height: 40%
+            height: 20%
             width: 60%
             display: block
             left: 0
@@ -261,7 +319,10 @@
             margin-left: auto
             margin-right: auto
             top: auto
-            bottom: 0px
+            bottom: 70px 
+            text-align: center
+                
+            
             
         form
             position: relative
@@ -271,30 +332,35 @@
             display: grid
             grid-template-columns: 1fr 1fr
             grid-template-rows: 1fr 1fr 1fr 1fr
+            z-index: 5
             
             div
                 position: relative
                 box-sizing: border-box
-                width: $sectionWidth
+                width: 100%
+                padding: 10px 0 
                 @include center
                     
                 input
                     background-color: $navColor
                     border: $turquoise 1px solid
                     padding-left: 5px
-                    height: $bodySize
+                    height: $bodySize + .43
                     position: relative
-                    width: 100%
+                    width: 95%
                     color: $whiteDots
+                    bottom: -10px
+                    left: 0
+                    box-sizing: border-box
+
 
                 ty
                     text-align: left
                     padding-left: 5px
                     color: $turquoise
-                    height: $bodySize - 5
                     font-size: $bodySize - 5
                     font-family: $hThin
-                    padding-bottom: 10px
+                    padding-bottom: 0px
                     
                 .disabled
                     color: $dots
@@ -307,6 +373,8 @@
                 height: 100%
                 float: left
                 width: 60%
+                position: relative
+                top: -20px
                 
                 .fakebox
                     width: $bodySize * 1.2
@@ -349,13 +417,13 @@
                     font-size: $bodySize
                     font-family: $hLight
                     position: relative
-                    top: $bodySize + 5px
+                    top: $bodySize + .2 
                     height: $bodySize
                     box-sizing: border-box
                     
         .submit
             position: relative
-            top: 9%
+            top: 5%
             grid-column: 1 /span 2
             
             button
@@ -395,8 +463,9 @@
 
             .bottom
                 position: absolute
-                right: 0
+                right: 30px
                 img
+                    max-width: 30%
                     margin-left: 0
                     margin-right: 0
                     padding: 0 10px
