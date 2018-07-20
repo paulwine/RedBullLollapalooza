@@ -107,3 +107,8 @@ window.onresize = function () {
     }
 
 }
+
+for(let each of sideText){
+    each.style.left = "-800px";
+    
+}
