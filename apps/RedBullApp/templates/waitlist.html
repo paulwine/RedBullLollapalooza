@@ -25,8 +25,8 @@
     }
     </style>
 <body>
-    <h1>Waitlist</h1>
-    <a href "/display_users">Users w/ wristbands</a>
+    <a href = "/display_users"> Users w/ wristbands</a>
+    
     <form action ="/waitlist_filtered" method="post">
         {% csrf_token %}
         <p>Search By Last Name:  <input type="text" name="last_name"></p>
@@ -37,6 +37,7 @@
         {% csrf_token %}
         <input type="submit" value ="Display full waitlist">
     </form>
+    <h1>Waitlist</h1>
     {% for user in users %}
     <hr>
     <div class="user">
