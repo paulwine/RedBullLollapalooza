@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="../static/css/specific.css">  -->
     <!-- <link rel="stylesheet" href="../static/css/mobile.css">  -->
 
-            {% load static %}
+                {% load static %}
     <link rel="stylesheet" href="{% static 'css/default.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
@@ -203,6 +203,7 @@
                     </div>
 
                     <div class="center c-right">
+                        <img src="../static/vectors/Logos/LeLabo.svg" alt="">
                         <img src="../static/vectors/Logos/AstroWifey.svg" alt="">
                         <img src="../static/vectors/Logos/BlindBarberGrey%20(1).svg" alt="">
 
@@ -260,27 +261,83 @@
                         <h2>Stock MFG</h2>
                         <p>Gear Curation</p>
                     </li>
+                    <li class='lax'><svg><circle/></svg>
+                        <h2>Le Labo</h2>
+                        <p>Fragrance Curation</p>
+                    </li>
                 </ul>
             </div>
 
             <div position=4 class='module fourth'>
-                <div class='lax'>
-                    <h2>PERFORMERS <br><span> TO BE </span> <br> DISCLOSED</h2>
-                    <p class='tuned'>STAY TUNED!</p>
+                <div class="grid">
+                    <div class="flex top">
+                        <div>
+                            <img src="../static/img/JustinMartin(1).jpg" alt="">
+                            <a class="overlay" href="https://www.liaisonartists.com/artists/justin-martin/" target="_blank">
+                                <h2>Justin Martin</h2>
+                                <p>(Dirtybird) <br><br>Hosted by: Paradigm x Paxahu</p>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="../static/img/JPhlip(1).jpg" alt="">
+                            <a class="overlay" href="https://www.liaisonartists.com/artists/j-phlip/" target="_blank">
+                                <h2>J.Phlip</h2>
+                                <p>(Dirtybird) <br><br>Hosted by: Paradigm x Paxahu</p>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="../static/img/GeneFarris.jpg" alt="">
+                            <a class="overlay" href="https://www.residentadvisor.net/dj/genefarris/biography
+" target="_blank">
+                                <h2>Gene Farris</h2>
+                                <p>(Dirtybird) <br><br>Hosted by: Paradigm x Paxahu</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class='flex middle'>
+                        <div>
+                            <img src="../static/img/JRocc.jpg" alt="">
+                            <a class="overlay" href="https://www.beatjunkies.com/crew/
+" target="_blank">
+                                <h2>J Rocc</h2>
+                                <p>(Beat Junkies/Stones Throw) <br><br>Hosted by: 1833</p>
+                            </a>
+                        </div>
+
+                        <div>
+
+                            <img src="../static/img/Just_Blaze_720x720.jpg" alt="">
+                            <a class="overlay" href="https://en.wikipedia.org/wiki/Just_Blaze
+" target="_blank">
+                                <h2>Just Blaze</h2>
+                                <p>(Fort Knocks) <br><br>Hosted by: Cold Chillen</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bottom flex">
+
+                        <div>
+                            <img src="../static/img/SaharHabibi.jpg" alt="">
+                            <div class="overlay">
+                                <h2>Sahar Habibi</h2>
+                                <p>(Soulection) <br><br>Hosted by: Roxwell</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../static/img/RaeChardonnay.jpg" alt="">
+                            <div class="overlay">
+                                <h2>Rae Chardonnay</h2>
+                                <p>(Party Noir) <br><br>Hosted by: Roxwell</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
 
-                <div class='lax flex-box'>
-                    <div class="top">
-                        <p>Curated By</p>
-                    </div>
-                    <div class="bottom">
-                        <img src="../static/vectors/Logos/PaxahauLandingLogo.svg" alt="">
-                        <img src="../static/vectors/Logos/ParadigmLandingLogo.svg" alt="">
-                        <img src="../static/vectors/Logos/RoxwellPerfLogo.svg" alt="">
-                        <img src="../static/vectors/Logos/1833LandingLogo.svg" alt="">
-                        <img src="../static/vectors/Logos/ColdChillenLandingLogo.svg" alt="">
-                    </div>
-                </div>
             </div>
 
             <div position=5 class='module edge-bottom fifth'>
@@ -346,7 +403,9 @@
     </div>
 
     <div id="mobile">
-
+        <div class="background-mobile">
+            <img src="../static/img/Background.png" alt="">
+        </div>
         <div class="mobile-section landing">
             <div><img src="../static/vectors/REDBULL.svg" alt="">
                 <img src="../static/vectors/CURATES.svg" alt=""></div>
@@ -363,9 +422,10 @@
                 <img src="../static/vectors/Logos/1833LandingLogo.svg" alt="">
                 <img src="../static/vectors/Logos/ColdChillenLandingLogo.svg" alt="">
                 <img src="../static/vectors/Logos/GreyGhostLandingLogo.svg" alt="">
-                <img src="../static/vectors/Logos/EntenteLandingLogo.svg" alt="">
-                <img src="../static/vectors/Logos/BlindBarberGrey%20(1).svg" alt="">
-                <img src="../static/vectors/Logos/AstroWifey.svg" alt="">
+
+                <img src="../static/vectors/Logos/EntenteLandingLogo.svg" alt=""><img src="../static/vectors/Logos/LeLabo.svg" alt="">
+                <img class="smaller" src="../static/vectors/Logos/BlindBarberGrey%20(1).svg" alt="">
+                <img class="smaller" src="../static/vectors/Logos/AstroWifey.svg" alt="">
             </div>
             <div class="flex-box bottom">
                 <img src="../static/vectors/Logos/WheatleyLogoLanding.svg" alt="">
@@ -443,8 +503,13 @@
                         <h3>Stock MFG</h3>
                         <p>Gear Curation</p>
                     </li>
+                    <li>
+                        <h3>Le Labo</h3>
+                        <p>Fragrance Curation</p>
+                    </li>
 
                 </ul>
+
             </div>
         </div>
 
@@ -457,19 +522,68 @@
                 <h2>PERFORMERS</h2>
             </div>
             <div class="mobile-body">
-                <h3>PERFORMERS <br> TO BE <br> DISCLOSED</h3>
-                <div class='flex-box'>
-                    <div class="top">
-                        <p>Curated By</p>
+                <div class="grid">
+                    <div>
+                        <img src="../static/img/JustinMartin(1).jpg" alt="">
+                        <a class="overlay" href="https://www.liaisonartists.com/artists/justin-martin/" target="_blank">
+                            <h2>Justin Martin</h2>
+                            <p>(Dirtybird) <br><br>Hosted by: Paradigm x Paxahu</p>
+                        </a>
                     </div>
-                    <div class="bottom logos">
-                        <img class="tall" src="../static/vectors/Logos/PaxahauLandingLogo.svg" alt="">
-                        <img class="tall" src="../static/vectors/Logos/ParadigmLandingLogo.svg" alt="">
-                        <img class="wide" src="../static/vectors/Logos/RoxwellPerfLogo.svg" alt="">
-                        <img class="tall" src="../static/vectors/Logos/1833LandingLogo.svg" alt="">
-                        <img class="wide" src="../static/vectors/Logos/ColdChillenLandingLogo.svg" alt="">
+                    <div>
+                        <img src="../static/img/JPhlip(1).jpg" alt="">
+                        <a class="overlay" href="https://www.liaisonartists.com/artists/j-phlip/" target="_blank">
+                            <h2>J.Phlip</h2>
+                            <p>(Dirtybird) <br><br>Hosted by: Paradigm x Paxahu</p>
+                        </a>
+                    </div>
+                    <div>
+                        <img src="../static/img/GeneFarris.jpg" alt="">
+                        <a class="overlay" href="https://www.residentadvisor.net/dj/genefarris/biography
+" target="_blank">
+                            <h2>Gene Farris</h2>
+                            <p>(Dirtybird) <br><br>Hosted by: Paradigm x Paxahu</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <img src="../static/img/JRocc.jpg" alt="">
+                        <a class="overlay" href="https://www.beatjunkies.com/crew/
+" target="_blank">
+                            <h2>J Rocc</h2>
+                            <p>(Beat Junkies/Stones Throw) <br><br>Hosted by: 1833</p>
+                        </a>
+                    </div>
+
+                    <div>
+
+                        <img src="../static/img/Just_Blaze_720x720.jpg" alt="">
+                        <a class="overlay" href="https://en.wikipedia.org/wiki/Just_Blaze
+" target="_blank">
+                            <h2>Just Blaze</h2>
+                            <p>(Fort Knocks) <br><br>Hosted by: Cold Chillen</p>
+                        </a>
+                    </div>
+
+
+
+                    <div>
+                        <img src="../static/img/SaharHabibi.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Sahar Habibi</h2>
+                            <p>(Soulection) <br><br>Hosted by: Roxwell</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../static/img/RaeChardonnay.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Rae Chardonnay</h2>
+                            <p>(Party Noir) <br><br>Hosted by: Roxwell</p>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
 
@@ -532,6 +646,7 @@
     </div>
 
     <script src="../static/js/checkboxes.js"></script>
+    <script src="../static/js/mobile.js"></script>
 
 </body>
 

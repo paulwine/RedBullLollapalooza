@@ -10,5 +10,8 @@
 }@font-face {
     font-family: 'HelveticaThin';
     src: url('font/HelveticaNeue-Thin-12.ttf') format('truetype');
+}@font-face {
+    font-family: 'HelveticaThinItalic';
+    src: url('font/HelveticaNeue-ThinItalic-13.ttf') format('truetype');
 }
 
