@@ -12,7 +12,6 @@ let fakeBoxes = document.getElementsByClassName('fakebox');
 
 //let fakeMobile = document.querySelector('#mobile').querySelector('.checkboxes').getElementsByClassName('fakebox');
 
-console.log(fakeBoxes);
 
 function checkBox(box) {
     for (let each of fakeBoxes) {
