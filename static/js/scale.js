@@ -13,8 +13,6 @@ let svgItems = new Array;
 let main = document.querySelector('.main');
 let background = document.querySelector('.background');
 
-console.log(background);
-
 function typeObject(typeElement, proportion) {
     this.element = typeElement;
     this.proportion = proportion;
@@ -65,7 +63,7 @@ for (let each of titleSecond) {
     }
 
     for (let each of titleFourth) {
-        let object = new typeObject(each, .045);
+        let object = new typeObject(each, .02);
         resize(object);
         fontItems.push(object);
     }

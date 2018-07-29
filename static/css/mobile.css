@@ -8,14 +8,22 @@
     height: 100%;
     position: absolute; } }
 
+.background-mobile {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: -300px;
+  z-index: -10; }
+  .background-mobile img {
+    height: auto;
+    width: auto;
+    height: 300%; }
+
 .mobile-section {
   position: static;
   min-height: 100%;
   width: 100%;
-  padding-bottom: 20%;
-  box-sizing: border-box;
-  background-image: url("../img/Background.png");
-  background-position: center; }
+  box-sizing: border-box; }
   .mobile-section img {
     height: auto;
     width: auto;
@@ -65,16 +73,16 @@
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
-    padding: 0 10%;
+    padding: 0 2%;
     flex-wrap: wrap; }
   .curators .top img {
     max-width: 35%;
-    max-height: 100px;
+    max-height: 60px;
     display: block;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin: 1% 2%; }
+    margin: 1% 4%; }
   .curators .bottom {
     margin-top: 40px; }
     .curators .bottom img {
@@ -85,16 +93,23 @@
       margin-right: auto;
       height: auto;
       width: auto;
-      max-width: 20%; }
+      max-width: 20%;
+      max-height: 50px; }
+
+.mobile-body {
+  padding-bottom: 20%;
+  box-sizing: border-box; }
 
 .mobile-header {
   height: 100px;
   width: 100%;
-  position: static;
+  position: sticky;
   display: block;
   box-sizing: border-box;
-  position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  top: 0;
+  transition: all;
+  z-index: 20; }
   .mobile-header img {
     position: absolute; }
   .mobile-header h2 {
@@ -104,7 +119,7 @@
     text-align: center;
     position: relative;
     display: block;
-    top: 35%; }
+    top: 35px; }
 
 .www .mobile-header {
   background-color: #c24c46; }
@@ -160,7 +175,7 @@
     width: 100%; }
     .collab ul li h3 {
       color: #dbb64e;
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-family: "HelveticaThin";
       width: 100%;
       text-align: center;
@@ -189,43 +204,47 @@
     top: 10%;
     left: 90%;
     transform: rotate(300deg); }
-.performers h3 {
-  font-size: 2.5rem;
-  font-family: "HelveticaThin";
-  color: #c16332;
-  width: 100%;
-  text-align: center;
-  margin-top: 100px; }
-.performers .flex-box {
-  width: 60%;
-  height: 200px;
-  margin-top: 80px;
-  position: relative;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .performers .flex-box .top {
-    width: 100%;
-    font-size: 1.2rem;
-    text-align: center;
-    height: 50%;
-    box-sizing: border-box; }
-    .performers .flex-box .top p {
-      color: #6d6d6d;
-      position: relative;
-      top: 70%; }
-  .performers .flex-box .bottom {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: space-between; }
-    .performers .flex-box .bottom .tall {
-      max-width: 12%; }
-    .performers .flex-box .bottom .wide {
-      max-width: 20%; }
+.performers .mobile-body {
+  padding-bottom: 0; }
+  .performers .mobile-body .grid {
+    display: grid;
+    grid-template-rows: repeat(7, 200px); }
+    .performers .mobile-body .grid > div {
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      position: relative; }
+      .performers .mobile-body .grid > div img {
+        position: absolute;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: 50% 0; }
+      .performers .mobile-body .grid > div .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6); }
+        .performers .mobile-body .grid > div .overlay h2 {
+          font-size: 2.4rem;
+          display: table;
+          font-family: "HelveticaBold";
+          position: relative;
+          margin-left: auto;
+          margin-right: auto;
+          border: solid 1px #c16332;
+          color: #dbd7d8;
+          top: 30px;
+          padding: 3px 5px; }
+        .performers .mobile-body .grid > div .overlay p {
+          position: relative;
+          width: 100%;
+          top: calc(30px + 2.4rem);
+          text-align: center;
+          font-family: "HelveticaThinItalic";
+          color: #dbd7d8; }
 
 .RSVP .mobile-header {
   background-color: #45bfa2; }
