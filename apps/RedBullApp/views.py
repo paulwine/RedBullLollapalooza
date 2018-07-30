@@ -38,8 +38,10 @@ def form_input(request):
     
     subject = 'Thank you for confirming! (Click to see invitation image)'
     recipient_list = [email]
+    bcc_recipient_list=[]
+
     sender = 'industry@redbullcurateschi.com'
-    EmailThread(subject, html_content, recipient_list, sender).start()
+    EmailThread(subject, html_content, recipient_list,bcc_recipient_list, sender).start()
     #EmailThread(subject, html_content, recipient_list, sender).run()
 #     send_mail(
 #     'Thank you for confirming! (Click to see invitation image)',
