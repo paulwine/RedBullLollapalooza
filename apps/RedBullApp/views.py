@@ -139,4 +139,4 @@ def send_mail_to_all_users(request):
     sender = 'industry@redbullcurateschi.com'
     EmailThread(subject, html_content, recipient_list, sender).start()
 
-    return redirect("/portal")
+    return redirect("/portal_login")
