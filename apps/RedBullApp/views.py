@@ -137,13 +137,13 @@ def send_mail_to_all_users(request):
 
     html_content = render_to_string('villa_riad_update_email.html')
     
-    bcc_recipient_list = ['douglas.layne@gmail.com','john.kosmopoulos@redbull.com', 'john@paradigmpresents.com', 'quade@bamcreates.com', 'ash.mcdowell.814@gmail.com', 'williamunzicker@gmail.com', 'Cameron.Crummie@redbull.com', 'brys.marcella@gmail.com', 'delayney@roxwellcurates.com','paulwinegard@gmail.com','wchatterson@gmail.com']
-    #bcc_recipient_list = ['douglas.layne@gmail.com','delayney@roxwellcurates.com', 'paulwinegard@gmail.com', 'wchatterson@gmail.com', 'bensr@umich.edu', 'benswansonralph@gmail.com']
+    #bcc_recipient_list = ['douglas.layne@gmail.com','john.kosmopoulos@redbull.com', 'john@paradigmpresents.com', 'quade@bamcreates.com', 'ash.mcdowell.814@gmail.com', 'williamunzicker@gmail.com', 'Cameron.Crummie@redbull.com', 'brys.marcella@gmail.com', 'delayney@roxwellcurates.com','paulwinegard@gmail.com','wchatterson@gmail.com']
+    bcc_recipient_list = ['paulwinegard@gmail.com', 'wchatterson@gmail.com']
     users = User.objects.all()
     recipient_list = []
-    for user in users:
-    	if user.email not in bcc_recipient_list:
-		bcc_recipient_list.append(user.email)
+    #for user in users:
+   #	 if user.email not in bcc_recipient_list:
+    #		bcc_recipient_list.append(user.email)
 
     subject = 'DJ LINEUP - Red Bull Curates: Villa Riad'
     sender = 'industry@redbullcurateschi.com'
