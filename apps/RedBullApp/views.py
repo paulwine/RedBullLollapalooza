@@ -130,13 +130,14 @@ def send_mail_to_all_users(request):
     # users = User.objects.all()
     # recipient_list = []
     # for user in users:
-    #     recipient_list.append(user.email)
-  
+    #     recipient_list.append(user.email)  
 
     html_content = render_to_string('villa_riad_update_email.html')
-    recipient_list = ['paulwinegard@gmail.com','wchatterson@gmail.com']
+    recipient_list = []
+    bcc_recipient_list = ['paulwinegard@gmail.com','wchatterson@gmail.com']
     subject = 'Villa Riad Update'
     sender = 'industry@redbullcurateschi.com'
-    EmailThread(subject, html_content, recipient_list, sender).start()
+
+    EmailThread(subject, html_content, recipient_list, bcc_recipient_list, sender).start()
 
     return redirect("/portal_login")
