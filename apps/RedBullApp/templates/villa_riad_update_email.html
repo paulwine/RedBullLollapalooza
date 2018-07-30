@@ -1,25 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Villa Riad Update</title>
+    <style>
+        body,
+        html {
+            background-color: rgba(21, 21, 22, 1);
+            color: rgba(219, 215, 216, 1);
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        body {
+            padding-top: 50px;
+        }
+
+        .mobile-body {
+            padding-bottom: 0;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        .mobile-body .grid {
+            display: grid;
+            grid-template-rows: repeat(7, 200px);
+        }
+
+        .mobile-body .grid>div {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .mobile-body .grid>div img {
+            position: absolute;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            max-height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: 50% 10%;
+            object-position: 50% 10%;
+        }
+
+        .mobile-body .grid>div .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .mobile-body .grid>div .overlay h2 {
+            font-size: 2rem;
+            display: table;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid 1px #c16332;
+            color: #dbd7d8;
+            top: 5px;
+            padding: 3px 5px;
+        }
+
+        .mobile-body .grid>div .overlay p {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            color: #dbd7d8;
+        }
+
+        .content {
+            box-sizing: border-box;
+            text-align: center;
+            padding-bottom: 400px;
+            width: 80%;
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        a{
+            text-decoration: none;
+        }
+        .tiny {
+            font-size: .7rem;
+            position: relative;
+            top: 30px;
+        }
+
+        img {
+            position: absolute;
+            width: auto;
+            height: 200%;
+        }
+
+        #svg{
+            display: block;
+            position: relative;
+            width: auto;
+            height: auto;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            top: 150px;
+            
+        }
+    </style>
 </head>
+
+<!--STOPPPPPPPPPPPPPPPPPPPPPPPP-->
+
 <body>
-    This is a test of the update email.  We will replace this text with the update email body.
+    <div class="mobile-body">
+        <div class="grid">
+            <div>
+                <img src="http://prettyboy.co/img/JustinMartin(1).jpg" alt="">
+                <a class="overlay" href="https://www.liaisonartists.com/artists/justin-martin/" target="_blank">
+                    <h2>Justin Martin</h2>
+                    <p>(Dirtybird)<br>Hosted by: Paradigm x Paxahau</p>
+                </a>
+            </div>
+            <div>
+                <img src="http://prettyboy.co/img/JPhlip(1).jpg" alt="">
+                <a class="overlay" href="https://www.liaisonartists.com/artists/j-phlip/" target="_blank">
+                    <h2>J.Phlip</h2>
+                    <p>(Dirtybird)<br>Hosted by: Paradigm x Paxahau</p>
+                </a>
+            </div>
+            <div>
+                <img src="http://prettyboy.co/img/GeneFarris.jpg" alt="">
+                <a class="overlay" href="https://www.residentadvisor.net/dj/genefarris/biography
+" target="_blank">
+                    <h2>Gene Farris</h2>
+                    <p>(Dirtybird)<br>Hosted by: Paradigm x Paxahau</p>
+                </a>
+            </div>
 
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio est harum, tempore non 
-    saepe excepturi dolorum assumenda, explicabo voluptatibus animi, consequatur dignissimos dolor 
-    quasi perspiciatis possimus autem officia voluptas quae!
+            <div>
+                <img src="http://prettyboy.co/img/JRocc.jpg" alt="">
+                <a class="overlay" href="https://www.beatjunkies.com/crew/
+" target="_blank">
+                    <h2>J Rocc</h2>
+                    <p>(Beat Junkies/Stones Throw)<br>Hosted by: 1833</p>
+                </a>
+            </div>
 
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio est harum, tempore non 
-    saepe excepturi dolorum assumenda, explicabo voluptatibus animi, consequatur dignissimos dolor 
-    quasi perspiciatis possimus autem officia voluptas quae!
+            <div>
 
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio est harum, tempore non 
-    saepe excepturi dolorum assumenda, explicabo voluptatibus animi, consequatur dignissimos dolor 
-    quasi perspiciatis possimus autem officia voluptas quae!
+                <img src="http://prettyboy.co/img/Just_Blaze_720x720.jpg" alt="">
+                <a class="overlay" href="https://en.wikipedia.org/wiki/Just_Blaze
+" target="_blank">
+                    <h2>Just Blaze</h2>
+                    <p>(Fort Knocks)<br>Hosted by: Cold Chillen</p>
+                </a>
+            </div>
+
+
+
+            <div>
+                <img src="http://prettyboy.co/img/SaharHabibi.jpg" alt="">
+                <div class="overlay">
+                    <h2>Sahar Habibi</h2>
+                    <p>(Soulection)<br>Hosted by: Roxwell</p>
+                </div>
+            </div>
+            <div>
+                <img src="http://prettyboy.co/img/RaeChardonnay.jpg" alt="">
+                <div class="overlay">
+                    <h2>Rae Chardonnay</h2>
+                    <p>(Party Noir)<br>Hosted by: Roxwell</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <br>
+
+    <div class='content'>
+
+
+        <div>
+            <h3>RED BULL CURATES: VILLA RIAD</h3> Private, Invite-Only Industry Event SUN AUG 5, 2018 DOORS OPEN 5PM LOCATION: SECRET (Stay tuned for reveal!)</div>
+
+        <br>
+        <div><em>Red Bull Curates Squad</em> #RedBullCurates
+        </div>
+
+
+        <div>
+            Red Bull Curates: Villa Riad. Powered by Roxwell. Curation by: Bam Creates, Paradigm Presents, Paxahau, 1833, Cold Chillen, Roxwell, Brian Fisher of Entente and Grey Ghost Cocktails
+        </div>
+        <p class='tiny'>
+            Note: This event will be filmed. Your attendance implies consent to be filmed and appear in the footage.
+        </p>
+    <img id = 'svg' src="http://prettyboy.co/img/RBCURATES.svg" alt="">
+    </div>
+
 
 </body>
+
 </html>
