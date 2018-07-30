@@ -17,7 +17,10 @@
   .background-mobile img {
     height: auto;
     width: auto;
-    height: 300%; }
+    height: 300%; 
+    position: relative;
+    left: -5px;
+  }
 
 .mobile-section {
   position: static;
@@ -60,7 +63,7 @@
     position: absolute;
     height: auto;
     width: auto;
-    max-width: 40%;
+    max-width: 30%;
     left: 10%;
     max-height: 100%; }
     .curators .big:nth-of-type(1) {
@@ -71,6 +74,7 @@
     position: relative;
     top: 150px;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-around;
     box-sizing: border-box;
     padding: 0 2%;
