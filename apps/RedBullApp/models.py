@@ -21,15 +21,16 @@ class User(models.Model):
        return self.first_name + " " + self.last_name
 
 class EmailThread(threading.Thread):
-    def __init__(self, subject, html_content, recipient_list, sender):
+    def __init__(self, subject, html_content, recipient_list, bcc_recipient_list, sender):
         self.subject = subject
         self.recipient_list = recipient_list
         self.html_content = html_content
         self.sender = sender
+        self.bcc_recipient_list = bcc_recipient_list
         threading.Thread.__init__(self)
 
     def run(self):
-        msg = EmailMessage(self.subject, self.html_content, self.sender, self.recipient_list)
+        msg = EmailMessage(self.subject, self.html_content, self.sender, self.recipient_list, self.bcc_recipient_list)
         msg.content_subtype = 'html'
         msg.send()
 
