@@ -138,3 +138,5 @@ def send_mail_to_all_users(request):
     subject = 'Villa Riad Update'
     sender = 'industry@redbullcurateschi.com'
     EmailThread(subject, html_content, recipient_list, sender).start()
+
+    return redirect("/portal")
