@@ -41,7 +41,7 @@
 .sixth .main-curate {
   height: auto;
   width: auto;
-  max-width: 37%;
+  max-width: 160px;
   top: 20%;
   position: absolute;
   display: block;
@@ -159,7 +159,7 @@
 #right .third {
   box-sizing: border-box;
   padding-left: 5%;
-  min-height: 300px; }
+  min-height: 200px; }
   #right .third ul {
     padding: 10% 0;
     margin-top: -2%;
@@ -416,7 +416,7 @@
     box-sizing: border-box; }
     #left .sixth .flex-box .top img {
       margin-left: 0;
-      max-width: 40%; }
+      max-width: 200px; }
   #left .sixth .flex-box .bottom {
     position: absolute;
     right: 30px; }
