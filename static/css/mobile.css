@@ -17,7 +17,10 @@
   .background-mobile img {
     height: auto;
     width: auto;
-    height: 300%; }
+    height: 300%; 
+    position: relative;
+    left: -5px;
+}
 
 .mobile-section {
   position: static;
@@ -60,8 +63,8 @@
     position: absolute;
     height: auto;
     width: auto;
-    max-width: 40%;
-    left: 10%;
+    max-width: 30%;
+    left: 15%;
     max-height: 100%; }
     .curators .big:nth-of-type(1) {
       margin-top: 2%; }
@@ -69,15 +72,17 @@
       left: 55%; }
   .curators .flex-box {
     position: relative;
-    top: 150px;
+    top: 100px;
+    display: -webkit-box-flex;
     display: flex;
     justify-content: space-around;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 2%;
     flex-wrap: wrap; }
   .curators .top img {
-    max-width: 35%;
-    max-height: 60px;
+    width: 30%;
+    height: auto;
     display: block;
     position: relative;
     margin-left: auto;
@@ -103,6 +108,7 @@
 .mobile-header {
   height: 100px;
   width: 100%;
+  position: -webkit-sticky;
   position: sticky;
   display: block;
   box-sizing: border-box;
