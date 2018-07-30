@@ -129,15 +129,23 @@ def portal_login(request):
 def send_mail_to_all_users(request):
     if request.session['current_admin'] != "MIKE JONES":
         return redirect("/")
+    bcc_recipient_list = []
     # users = User.objects.all()
     # recipient_list = []
     # for user in users:
-    #     recipient_list.append(user.email)  
+    #    bcc_recipient_list.append(user.email)  
 
     html_content = render_to_string('villa_riad_update_email.html')
+    
+    bcc_recipient_list = ['douglas.layne@gmail.com','john.kosmopoulos@redbull.com', 'john@paradigmpresents.com', 'quade@bamcreates.com', 'ash.mcdowell.814@gmail.com', 'williamunzicker@gmail.com', 'Cameron.Crummie@redbull.com', 'brys.marcella@gmail.com', 'delayney@roxwellcurates.com','paulwinegard@gmail.com','wchatterson@gmail.com']
+    #bcc_recipient_list = ['douglas.layne@gmail.com','delayney@roxwellcurates.com', 'paulwinegard@gmail.com', 'wchatterson@gmail.com', 'bensr@umich.edu', 'benswansonralph@gmail.com']
+    users = User.objects.all()
     recipient_list = []
-    bcc_recipient_list = ['paulwinegard@gmail.com','wchatterson@gmail.com']
-    subject = 'Villa Riad Update'
+    for user in users:
+    	if user.email not in bcc_recipient_list:
+		bcc_recipient_list.append(user.email)
+
+    subject = 'DJ LINEUP - Red Bull Curates: Villa Riad'
     sender = 'industry@redbullcurateschi.com'
 
     EmailThread(subject, html_content, recipient_list, bcc_recipient_list, sender).start()
