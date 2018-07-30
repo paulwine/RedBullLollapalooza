@@ -10,10 +10,8 @@ let svgs = document.getElementsByClassName('svg');
 
 let fontItems = new Array;
 let svgItems = new Array;
-
+let main = document.querySelector('.main');
 let background = document.querySelector('.background');
-
-console.log(background);
 
 function typeObject(typeElement, proportion) {
     this.element = typeElement;
@@ -65,7 +63,7 @@ for (let each of titleSecond) {
     }
 
     for (let each of titleFourth) {
-        let object = new typeObject(each, .045);
+        let object = new typeObject(each, .02);
         resize(object);
         fontItems.push(object);
     }
@@ -105,4 +103,10 @@ window.onresize = function () {
     for (let each of svgItems) {
         resizeSVG(each);
     }
+
+}
+
+for(let each of sideText){
+    each.style.left = "-800px";
+    
 }

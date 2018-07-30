@@ -38,8 +38,10 @@ def form_input(request):
     
     subject = 'Thank you for confirming! (Click to see invitation image)'
     recipient_list = [email]
+    bcc_recipient_list=[]
+
     sender = 'industry@redbullcurateschi.com'
-    EmailThread(subject, html_content, recipient_list, sender).start()
+    EmailThread(subject, html_content, recipient_list,bcc_recipient_list, sender).start()
     #EmailThread(subject, html_content, recipient_list, sender).run()
 #     send_mail(
 #     'Thank you for confirming! (Click to see invitation image)',
@@ -123,3 +125,21 @@ def portal_login(request):
         return redirect("/portal")
     request.session["current_admin"] = "MIKE JONES"
     return render(request, 'portal_login.html')
+
+def send_mail_to_all_users(request):
+    if request.session['current_admin'] != "MIKE JONES":
+        return redirect("/")
+    # users = User.objects.all()
+    # recipient_list = []
+    # for user in users:
+    #     recipient_list.append(user.email)  
+
+    html_content = render_to_string('villa_riad_update_email.html')
+    recipient_list = []
+    bcc_recipient_list = ['paulwinegard@gmail.com','wchatterson@gmail.com']
+    subject = 'Villa Riad Update'
+    sender = 'industry@redbullcurateschi.com'
+
+    EmailThread(subject, html_content, recipient_list, bcc_recipient_list, sender).start()
+
+    return redirect("/portal_login")

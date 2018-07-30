@@ -21,6 +21,7 @@
     left: -5px;
     height: 300%; }
 
+
 .mobile-section {
   position: static;
   min-height: 100%;
@@ -68,7 +69,7 @@
     position: absolute;
     height: auto;
     width: auto;
-    max-width: 40%;
+    max-width: 30%;
     left: 10%;
     max-height: 100%; }
     .curators .big:nth-of-type(1) {

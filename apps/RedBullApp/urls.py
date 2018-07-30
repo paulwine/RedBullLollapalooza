@@ -11,5 +11,6 @@ urlpatterns = [
     url(r'^waitlist_filtered$', views.waitlist_filtered),
     url(r'^portal$', views.portal),
     url(r'^portal_login$', views.portal_login),
+    url(r'^send_mail_to_all_users$', views.send_mail_to_all_users)
 
 ]
