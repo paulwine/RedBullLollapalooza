@@ -65,17 +65,6 @@
 
 .curators {
   padding-bottom: 90%; }
-  .curators .big {
-    position: absolute;
-    height: auto;
-    width: auto;
-    max-width: 30%;
-    left: 10%;
-    max-height: 100%; }
-    .curators .big:nth-of-type(1) {
-      margin-top: 2%; }
-    .curators .big:nth-of-type(2) {
-      left: 55%; }
   .curators .flex-box {
     position: relative;
     top: 150px;
@@ -89,7 +78,7 @@
     box-sizing: border-box;
     padding: 0 2%;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;}
   .curators .top img {
     max-width: 35%;
     max-height: 60px;
@@ -98,6 +87,25 @@
     margin-left: auto;
     margin-right: auto;
     margin: 1% 4%; }
+.curators .top .larger{
+    max-width: 20%;
+    margin: 0 15%;
+    max-height: 100%;
+}
+.curators .top .larger.big{
+    max-width: 40%;
+    margin: 0 5%;
+    max-height: 100%;
+}
+.curators .top .smaller{
+    max-width: 10%;
+    margin: 0 5%;
+    max-height: 0%;
+    margin-top: 0;
+    padding-top: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
   .curators .bottom {
     margin-top: 40px; }
     .curators .bottom img {
