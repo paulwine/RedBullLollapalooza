@@ -110,7 +110,10 @@
     top: 20%;
 }
   .sixth div.flex-box div.c-right {
-    left: 5%; }
+    left: 5%; }  
+.sixth div.flex-box div.c-right img {
+    max-width: 25%;
+    max-height: 60%}
   .sixth div.flex-box div.bottom {
     position: relative;
     width: 90%;
