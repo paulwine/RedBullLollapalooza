@@ -129,7 +129,6 @@ def portal_login(request):
 def send_mail_to_all_users(request):
     if request.session['current_admin'] != "MIKE JONES":
         return redirect("/")
-    bcc_recipient_list = []
     # users = User.objects.all()
     # recipient_list = []
     # for user in users:
@@ -145,7 +144,7 @@ def send_mail_to_all_users(request):
    #	 if user.email not in bcc_recipient_list:
     #		bcc_recipient_list.append(user.email)
 
-    subject = 'DJ LINEUP - Red Bull Curates: Villa Riad'
+    subject = 'Red Bull Curates: Villa Riad is Just a Few Days Away!'
     sender = 'industry@redbullcurateschi.com'
 
     EmailThread(subject, html_content, recipient_list, bcc_recipient_list, sender).start()

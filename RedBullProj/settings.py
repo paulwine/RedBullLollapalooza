@@ -31,8 +31,8 @@ ALLOWED_HOSTS = ['18.221.194.106', 'redbullcurateschi.com', 'www.redbullcuratesc
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.sendgrid.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'RedBullAdmin'
-EMAIL_HOST_PASSWORD = 'r3db00l!!'
+EMAIL_HOST_USER = 'RedBoolAdmin'
+EMAIL_HOST_PASSWORD = 'R3db00l!!'
 
 
 
