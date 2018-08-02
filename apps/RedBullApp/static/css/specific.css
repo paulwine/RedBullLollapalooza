@@ -185,33 +185,36 @@
   box-sizing: border-box;
   padding-left: 5%;
   min-height: 300px; }
+
+
+/*start change*/
   #right .third ul {
-    padding: 10% 0;
+    padding: 5% 0;
     margin-top: -2%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    height: 100%;
-    width: 75%;
+    height: 90%;
+    width: 90%;
     position: relative;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    display: block; }
+    display: block;
+    border-bottom: solid 1px rgba(63,62,63,1) ;}
+/*end change*/
     #right .third ul li {
       position: relative;
       width: 100%;
       display: block;
-      height: 16%;
-      margin: 2% 0;
+      height: 12%;
+      margin: 1% 0;
       -webkit-box-sizing: default;
       box-sizing: default;
-      text-align: center; }
-      #right .third ul li svg {
-        position: absolute;
-        height: 0;
-        width: 0;
-        z-index: 30;
-        left: 0; }
+      text-align: left; }
+      #right .third ul li .icon {
+          width: 8%;
+          position: relative;
+      }
         #right .third ul li svg circle {
           r: 20px;
           cy: 20px;
@@ -219,14 +222,43 @@
           fill: #dbd7d8; }
       #right .third ul li h2 {
         color: #dbb64e;
-        font-size: 40px; }
-      #right .third ul li p {
-        text-align: center;
+        font-size: 40px;
         position: relative;
-        left: 3px;
-        top: 0px; }
+        left: 10%;  
+        top: 10%;  
+}     
+#right .third ul li div {
+    display: inline-block;
+    width: 50%;
+}
+      #right .third ul li div p {
+        text-align: left;
+        position: relative;
+        top: 0;  
+        left: 10%;
+}
     #right .third ul .right {
-      margin-left: auto; }
+      position: relative;
+      left: 60%;
+}            
+#right .third ul .yellow {
+      color: rgba(219,182,78, 1);
+}        
+#right .third ul li div .downtext {
+      position: relative;
+      top: 20%;
+      font-family: "HelveticaThinItalic";\
+      color: rgba(219,215,216,1); 
+}    
+#right .third ul li div .downtext2 {
+      position: relative;
+      top: calc(20% - .5rem);
+      font-family: "HelveticaThinItalic";
+      color: rgba(219,215,216,1);
+}    
+
+
+/*end changes*/
 #right .fourth .grid {
   display: grid;
   grid-template-rows: 1fr 1fr 0.7fr;

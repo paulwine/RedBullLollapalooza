@@ -27,7 +27,7 @@ function validate(button){
     }
     console.log(mark);
     if(mark === 5){
-        form.submit();
+        form.querySelector('#submit').click();
     }else{
         alert('Please submit a valid, four digit wristband number and be sure you filled out all required (*) fields.')
     }
