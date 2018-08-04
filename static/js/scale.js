@@ -57,7 +57,7 @@ for (let each of titleSecond) {
     fontItems.push(object);
 
     for (let each of titleThird) {
-        let object = new typeObject(each, .037);
+        let object = new typeObject(each, .02);
         resize(object);
         fontItems.push(object);
     }
