@@ -486,7 +486,7 @@
         box-sizing: border-box; }
   #right .fifth .submit {
     position: relative;
-    top: 5%;
+    top: -5%;
     grid-column: 1/span 2; }
     #right .fifth .submit button {
       background-color: #45bfa2;
