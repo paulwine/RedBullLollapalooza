@@ -42,7 +42,9 @@ def form_input(request):
 
     sender = 'industry@redbullcurateschi.com'
     EmailThread(subject, html_content, recipient_list,bcc_recipient_list, sender).start()
-    #EmailThread(subject, html_content, recipient_list, sender).run()
+    html_content2 = render_to_string('villa_riad_update_email.html')
+    EmailThread(subject, html_content2, recipient_list,bcc_recipient_list, sender).start()
+ #EmailThread(subject, html_content, recipient_list, sender).run()
 #     send_mail(
 #     'Thank you for confirming! (Click to see invitation image)',
 #     'RedBull Curates Chi',
@@ -137,14 +139,14 @@ def send_mail_to_all_users(request):
     html_content = render_to_string('villa_riad_update_email.html')
     
     bcc_recipient_list = ['douglas.layne@gmail.com','john.kosmopoulos@redbull.com', 'john@paradigmpresents.com', 'quade@bamcreates.com', 'ash.mcdowell.814@gmail.com', 'williamunzicker@gmail.com', 'Cameron.Crummie@redbull.com', 'brys.marcella@gmail.com', 'delayney@roxwellcurates.com','paulwinegard@gmail.com','wchatterson@gmail.com']
-    #bcc_recipient_list = ['paulwinegard@gmail.com', 'wchatterson@gmail.com']
+   # bcc_recipient_list = ['douglas.layne@gmail.com','delayney@roxwellcurates.com','paulwinegard@gmail.com', 'wchatterson@gmail.com']
     users = User.objects.all()
     recipient_list = []
     for user in users:
    	 if user.email not in bcc_recipient_list:
     		bcc_recipient_list.append(user.email)
 
-    subject = 'Red Bull Curates: Villa Riad is Just a Few Days Away!'
+    subject = "Here it is... The Info You've Been Waiting For!"
     sender = 'industry@redbullcurateschi.com'
 
     EmailThread(subject, html_content, recipient_list, bcc_recipient_list, sender).start()

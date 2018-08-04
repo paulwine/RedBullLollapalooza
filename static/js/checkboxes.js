@@ -17,19 +17,17 @@ function validate(button){
     let cell = form.querySelector('.cell');
     let info = [first, last, email, cell];
     let mark = 0;
-    if(number.value.length === 4){
-        mark += 1;
-    }
+
     for(let each of info){
         if(each.querySelector('input').value.length > 0){
             mark += 1;
         }
     }
     console.log(mark);
-    if(mark === 5){
+    if(mark === 4){
         form.querySelector('#submit').click();
     }else{
-        alert('Please submit a valid, four digit wristband number and be sure you filled out all required (*) fields.')
+        alert('Please be sure you filled out all required (*) fields.')
     }
 }
 
