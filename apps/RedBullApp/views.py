@@ -36,12 +36,12 @@ def form_input(request):
     print(wristband)
     User.objects.create(first_name=first_name, last_name=last_name, phone=phone,email=email, wristband=wristband, affiliation=affiliation, referall=referall,invitation=invitation)
     
-    subject = 'Thank you for confirming! (Click to see invitation image)'
+    subject = 'See You Soon!  Red Bull Curates: Villa Riad'
     recipient_list = [email]
     bcc_recipient_list=[]
 
     sender = 'industry@redbullcurateschi.com'
-    EmailThread(subject, html_content, recipient_list,bcc_recipient_list, sender).start()
+   # EmailThread(subject, html_content, recipient_list,bcc_recipient_list, sender).start()
     html_content2 = render_to_string('villa_riad_update_email.html')
     EmailThread(subject, html_content2, recipient_list,bcc_recipient_list, sender).start()
  #EmailThread(subject, html_content, recipient_list, sender).run()
@@ -139,14 +139,14 @@ def send_mail_to_all_users(request):
     html_content = render_to_string('villa_riad_update_email.html')
     
     bcc_recipient_list = ['douglas.layne@gmail.com','john.kosmopoulos@redbull.com', 'john@paradigmpresents.com', 'quade@bamcreates.com', 'ash.mcdowell.814@gmail.com', 'williamunzicker@gmail.com', 'Cameron.Crummie@redbull.com', 'brys.marcella@gmail.com', 'delayney@roxwellcurates.com','paulwinegard@gmail.com','wchatterson@gmail.com']
-   # bcc_recipient_list = ['douglas.layne@gmail.com','delayney@roxwellcurates.com','paulwinegard@gmail.com', 'wchatterson@gmail.com']
+    #bcc_recipient_list = ['douglas.layne@gmail.com','delayney@roxwellcurates.com','paulwinegard@gmail.com', 'wchatterson@gmail.com']
     users = User.objects.all()
     recipient_list = []
     for user in users:
    	 if user.email not in bcc_recipient_list:
     		bcc_recipient_list.append(user.email)
 
-    subject = "Here it is... The Info You've Been Waiting For!"
+    subject = "See You Soon!  Red Bull Curates: Villa Riad"
     sender = 'industry@redbullcurateschi.com'
 
     EmailThread(subject, html_content, recipient_list, bcc_recipient_list, sender).start()
