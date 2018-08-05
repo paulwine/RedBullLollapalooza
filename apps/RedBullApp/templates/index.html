@@ -5,17 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedBull Curates</title>
-<!--
     <link rel="stylesheet" href="../static/css/default.css">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/nav.css">
     <link rel="stylesheet" href="../static/css/specific.css">
     <link rel="stylesheet" href="../static/css/mobile.css">
--->
 
+    <!--
                     {% load static %}
     
+-->
     <link rel="stylesheet" href="{% static 'css/default.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
@@ -325,9 +325,9 @@
                             <p class='yellow'>5pm - 2am</p>
                             <p class='downtext2'>Riad Lounge</p>
                         </div>
-                    </li>                    
-                       
-                       <li id = 'additional'>
+                    </li>
+
+                    <li id='additional'>
                         <div>
                             <h2>Le Labo</h2>
                             <p class='downtext'>Fragrance Curation</p>
@@ -339,11 +339,11 @@
                     </li>
 
                 </ul>
-                
+
             </div>
 
-            
-<!--            end change-->
+
+            <!--            end change-->
 
             <div position=4 class='module fourth'>
                 <div class="grid">
@@ -418,8 +418,8 @@
             </div>
 
             <div position=5 class='module edge-bottom fifth'>
-                <form action="/form_input" method="POST" class="lax">
-                    {% csrf_token %}
+                <form style='display: none;' action="/form_input" method="POST" class="lax">
+                    <!--                    {% csrf_token %}-->
                     <div class='first'>
                         <ty>First Name*</ty><input name="first_name" type="text"></div>
                     <div class='last'>
@@ -435,7 +435,7 @@
                         <ty>Who extended your invitation?</ty><input name="referall" type="text">
                     </div>
                     <div class=''>
-                        <p style = 'text-align: left; color: rgba(69,191,162,1); top: 5px;'> Guests must RSVP *and* have invite wristband. Please input the number located in the white box on your wristband.</p>
+                        <p style='text-align: left; color: rgba(69,191,162,1); top: 5px;'> Guests must RSVP *and* have invite wristband. Please input the number located in the white box on your wristband.</p>
                         <div class='checkboxes'>
 
 
@@ -458,7 +458,8 @@
                     <div class='submit lax'><button type='button' name='button'>SUBMIT</button>
                         <button id='submit' style='display: none;' type='submit'></button></div>
                 </form>
-
+                <h4 style="position: relative; text-align: center; font-size: 3rem; color: rgba(69,191,162,1); font-family: HelveticaThin; top: 15%;">RSVP CLOSED</h4>
+                <p style="color: rgba(69,191,162,1);">See you tonight!</p>
                 <div class="subtext lax">
                     <p>Red Bull Curates: Villa Riad is​ ​a private event​ ​intended for members of the Nightlife + Hospitality industries.</p>
                     <br>
@@ -557,7 +558,7 @@
                 <h2>SCHEDULE</h2>
             </div>
             <div class="mobile-body ">
-<!--               changes-->
+                <!--               changes-->
                 <ul>
                     <li><img class='icon' src="../static/schedule/Hashtag.svg" alt="">
                         <div>
@@ -569,10 +570,10 @@
                             <p class='downtext2'>Riad Social</p>
                         </div>
                     </li>
-                    
-                    
-                    
-                    
+
+
+
+
                     <li><img class='icon' src="../static/schedule/Instagram.svg" alt="">
                         <div>
                             <h2>Villa Vignettes</h2>
@@ -636,15 +637,15 @@
                     <li><img class='icon' src="../static/schedule/Games.svg" alt="">
                         <div>
                             <h2>Games</h2>
-                            <p class='downtext' style = 'visibility: hidden;'> s</p>
+                            <p class='downtext' style='visibility: hidden;'> s</p>
                         </div>
                         <div class='right'>
                             <p class='yellow'>5pm - 2am</p>
                             <p class='downtext2'>Riad Lounge</p>
                         </div>
-                    </li>                    
-                       
-                       <li id = 'additional'>
+                    </li>
+
+                    <li id='additional'>
                         <div>
                             <h2>Le Labo</h2>
                             <p class='downtext'>Fragrance Curation</p>
@@ -656,8 +657,8 @@
                     </li>
 
                 </ul>
-<!--                end changes-->
-                
+                <!--                end changes-->
+
             </div>
         </div>
 
@@ -743,7 +744,7 @@
                 <h2>RSVP</h2>
             </div>
             <div class="mobile-body fifth">
-                <form action="/form_input" method="POST" class="lax">
+                <form style="display: none;" action="/form_input" method="POST" class="lax">
                     {% csrf_token %}
                     <div class='first'>
                         <p>First Name*</p><input name="first_name" type="text"></div>
@@ -760,7 +761,7 @@
                         <p>Who extended your invitation?</p><input name="referall" type="text">
                     </div>
                     <div class='long'>
-                        <p style = 'text-align: left; color: rgba(69,191,162,1); top: 5px;'> Guests must RSVP *and* have invite wristband. Please input the number located in the white box on your wristband.</p>
+                        <p style='text-align: left; color: rgba(69,191,162,1); top: 5px;'> Guests must RSVP *and* have invite wristband. Please input the number located in the white box on your wristband.</p>
                         <div class='checkboxes'>
 
 
@@ -784,6 +785,9 @@
                         <button id='submit' style='display: none;' type='submit'></button></div>
                 </form>
 
+
+                <h1 style="position: relative; text-align: center; font-size: 3rem; color: rgba(69,191,162,1); font-family: HelveticaThin; padding-top: 100px;">RSVP CLOSED</h1>
+                <p style="color: rgba(69,191,162,1); width: 100%; text-align: center; padding-top: 20px;">See you tonight!</p>
                 <div class="subtext">
                     <p>Red Bull Curates: Villa Riad is​ ​a private event​ ​intended for members of the Nightlife + Hospitality industries.</p>
                     <br>
