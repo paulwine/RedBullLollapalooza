@@ -1,0 +1,54 @@
+body{
+    background-image: url('../img/Background.png');
+    background-position: center center;
+}
+
+.logo{
+    width:600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+}
+
+.logo img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+h1{
+    color: rgba(226,158,51, 1);
+    font-family: "HelveticaThin";
+    text-align: center;
+    font-size: 6rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.main{
+    padding-top: 100px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "HelveticaThin";
+    text-align: center;
+}
+
+.main h2{
+    font-size: 2rem;
+    padding-bottom: 10px;;
+}
+
+@media screen and (max-width: 600px){
+    .logo{
+        width: 300px;
+    }
+    h1{
+        font-size: 3rem; 
+    }
+}
+
