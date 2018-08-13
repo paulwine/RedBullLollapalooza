@@ -1,5 +1,6 @@
 let video = document.querySelector('video');
+video.load();
 
-window.onload = function(){
+video.onload = function(){
     video.play();
 }
