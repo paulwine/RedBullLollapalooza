@@ -1,0 +1,93 @@
+body{
+    background-image: url('../img/Background.png');
+    background-position: center center;
+}
+
+.logo{
+    width:400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+}
+
+.logo img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+h1{
+    color: rgba(226,158,51, 1);
+    font-family: "HelveticaThin";
+    text-align: center;
+    font-size: 4rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.main{
+    padding-top: 20px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "HelveticaThin";
+    text-align: center;
+}
+
+.main h2{
+    font-size: 1.5rem;
+    padding-bottom: 10px;;
+}
+.main p{
+    margin-top: 40px;
+    text-align: left;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.video{
+    margin-top: 0px;;
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;;
+}
+.video video{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+@media screen and (max-width: 600px){
+    .logo{
+        width: 300px;
+    }
+    h1{
+        font-size: 3rem; 
+    }
+    .main h2{
+        font-size: 1.5rem;
+    }
+    .main p{
+        max-width: 100%;
+        padding-left: 2px;
+    }
+    .video{
+        max-width: 100%;
+    }
+}
+
+
+

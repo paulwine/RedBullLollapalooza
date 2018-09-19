@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
+import os
 import threading
 from django.shortcuts import render, redirect
 from .models import User, EmailThread
@@ -8,6 +8,7 @@ from django.core.mail import send_mail, EmailMessage
 
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
+
  
 
 # Create your views here.
@@ -143,3 +144,39 @@ def send_mail_to_all_users(request):
     EmailThread(subject, html_content, recipient_list, bcc_recipient_list, sender).start()
 
     return redirect("/portal_login")
+
+def gallery(request):
+    imgs = os.listdir('static/img/event')
+    imgs = ['img/event/' + file for file in imgs]
+    if 'index' not in request.session:
+        request.session['index'] = 0
+
+    index = request.session['index']
+    idx = index/20
+ 
+    context = {
+        'imgs' : imgs[index:index+20],
+        'index' : idx 
+        }
+
+    return render(request, "gallery.html", context)
+
+def single_image(request, imageurl):
+    image = "/img/event/" + imageurl + ".jpg"
+    
+    context = {
+        'image' : image
+    }
+
+    return render(request, "single_image.html", context)
+
+def gallery_foward(request):
+    if request.session['index'] < 216:
+        request.session['index'] += 20
+        print(request.session['index'])
+    return redirect("/gallery")
+def gallery_backward(request):
+    if request.session['index'] >= 20:
+        request.session['index'] -= 20
+        print(request.session['index'])
+    return redirect("/gallery")
