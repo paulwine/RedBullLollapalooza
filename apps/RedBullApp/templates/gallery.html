@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Gallery</title>
     {% load static %}
-
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
 </head>
 <body>
+    <h2 class = 'home'><a href='/' class = 'homeA'>Home</a></h2>
     <h1>Gallery</h1>
-    <div id=imgDiv>
-        {% for img in imgs %}
-        <a href="{{img}}" >
-            <img src="{% static img %}" alt="{{img}}" onclick="">
-        </a>
-        {% endfor %}
-        <a href="gallery_backward">----BACK----</a>
-        <a href="gallery_foward">----FOWARD----</a>
+    <div id=imgDiv class = 'container'>
+        <ul class = 'images'>
+            {% for img in imgs %}
+            <li>
+                <a class = 'image' href="{{img}}" >
+                    <img src="{% static img %}" alt="{{img}}" onclick="">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class = 'footer'>
+        <a href="gallery_backward">Prev</a>
         <h2>{{index}}</h2>
+        <a href="gallery_foward">Next</a>
+        
     </div>
 
 </body>

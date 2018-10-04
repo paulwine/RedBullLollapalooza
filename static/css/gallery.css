@@ -1,7 +1,80 @@
-img{
-    width: 160px;
-    height: 100px;
+body{
+    background-image: url('../img/Background.png');
+    background-position: center center;
+    background-size: cover;
+    background-color: black;
+    color: white;
 }
-imgDiv{
-    padding: 20px;
+.home{
+    padding: 5% 0 0 3%;
+}
+.homeA{
+    font-family: 'HelveticaThin';
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: underline;
+}
+h1{
+    font-family: 'HelveticaThin';
+    font-size: 4rem;
+    padding: 5% 0 3% 3%;
+    
+}
+.container{
+    position: relative;
+    width: 94%;
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.images{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    -webkit-flex-flow: wrap;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+li{
+    width: 49.5%;
+    margin-top: 1%;
+}
+img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 1% 0;
+    background-color: rgba(0,0,0,.4);
+}
+.footer a{
+    color: white;
+    font-family: 'HelveticaThin';
+    text-decoration: underline;
+}
+.footer h2{
+    font-family: 'HelveticaThin';
+}
+
+@media screen and (max-width: 600px){
+    li{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .footer{
+        font-size: 1.5rem;
+        padding: 2%;
+    }
 }
